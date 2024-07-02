@@ -1,7 +1,7 @@
 "use client";
 
-const { animatePageOut } = require("@/app/utils/animation");
-const { useRouter, usePathname } = require("next/navigation");
+import { animatePageOut } from "@/app/utils/animation";
+import { useRouter, usePathname } from "next/navigation";
 
 const TransitionLink = ({ href, label }) => {
 	const router = useRouter();

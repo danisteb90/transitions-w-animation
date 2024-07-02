@@ -3,7 +3,7 @@ import TransitionLink from "./TransitionLink";
 
 const Header = () => {
 	return (
-		<div className="w-full flex items-center gap-10 p-10">
+		<div className="w-full flex items-center gap-10 p-10 relative z-[10]">
 			<TransitionLink href="/" label="Inicio" />
 			<TransitionLink href="/about" label="Nosotros" />
 			<TransitionLink href="/contact" label="Contacto" />
