@@ -1,7 +1,7 @@
 const About = () => {
 	return (
 		<main className="w-[500px] h-full pl-10">
-			<h1 className="text-lg font-bold mb-5">About</h1>
+			<h1 className="text-lg gSansMedium mb-5">About</h1>
 			<p>
 				Amet est in sit quis. Cupidatat nisi voluptate in incididunt ipsum magna
 				amet non anim eu eiusmod. Sunt nostrud reprehenderit voluptate est ex
