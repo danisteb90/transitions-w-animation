@@ -38,3 +38,15 @@
   font-weight: 500;
   font-style: normal;
 }
+
+.gSans {
+  font-family: "GeneralSans", sans-serif;
+}
+
+.gSansLight {
+  font-family: "GeneralSans-Light", sans-serif;
+}
+
+.gSansMedium {
+  font-family: "GeneralSans-Medium", sans-serif;
+}
