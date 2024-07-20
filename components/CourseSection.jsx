@@ -64,6 +64,7 @@ export default function CourseSection() {
 		<main id="main-course-container" className="main-course-container">
 			{/* Carousel */}
 			<div className="carousel">
+				<h2 className="courses-title">Cursos</h2>
 				<div className="list">
 					<div className="item">
 						<Image

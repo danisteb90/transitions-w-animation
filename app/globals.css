@@ -76,11 +76,23 @@ body {
 
 .main-course-container {
   overflow: hidden;
+  position: relative;
   background-color: white;
   font-family: "GeneralSans-Light", sans-serif;
   padding: 60px;
   width: 100vw;
   height: 100vh;
+}
+
+.carousel .courses-title {
+  position: absolute;
+  z-index: 3;
+  top: 12%;
+  right: 18%;
+  font-family: "GeneralSans-Medium", sans-serif;
+  color: var(--zen-white);
+  mix-blend-mode: overlay;
+  font-size: 120px;
 }
 
 /* Carousel */
