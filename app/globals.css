@@ -149,6 +149,13 @@ body {
   color: var(--zen-white);
 }
 
+.carousel .list .item .content .prox {
+  font-family: "GeneralSans-Medium", sans-serif;
+  color: var(--zen-white);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .carousel .list .item .content .buttons .button {
   background-color: #00000080;
   padding: 10px;
@@ -163,7 +170,7 @@ body {
 .thumbnail {
   position: absolute;
   bottom: 50px;
-  left: 50%;
+  left: 45%;
   width: max-content;
   z-index: 2;
   display: flex;
@@ -171,7 +178,7 @@ body {
 }
 
 .thumbnail .item {
-  width: 150px;
+  width: 220px;
   height: 220px;
   flex-shrink: 0;
   position: relative;
@@ -196,7 +203,13 @@ body {
   font-size: 16px;
 }
 
-.thumbnail .item .content .sanacion {
+.thumbnail .item .content .des {
+  font-family: "GeneralSans-Medium", sans-serif;
+  font-size: 15px;
+  color: var(--zen-base);
+}
+
+.thumbnail .item .content .wText {
   color: white !important;
 }
 
@@ -310,12 +323,12 @@ body {
 
 @keyframes showThumbnail {
   to {
-    width: 150px;
+    width: 220px;
   }
 }
 
 .carousel.next .thumbnail {
-  transform: translateX(150px);
+  transform: translateX(220px);
   animation: transformThumbnail 0.5s linear 1 forwards;
 }
 

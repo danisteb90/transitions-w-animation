@@ -1,16 +1,32 @@
 "use client";
 import gsap from "gsap";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import CourseSection from "./CourseSection";
+import Lenis from "lenis";
 
 const IntroAnimation = () => {
+	// useEffect(() => {
+	// 	window.scrollTo(0, 0);
+	// }, []);
+
+	useEffect(() => {
+		const lenis = new Lenis();
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		requestAnimationFrame(raf);
+	});
+
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			document
 				.getElementById("courses-container")
 				.scrollIntoView({ behavior: "smooth" });
-		}, 10000);
+		}, 15000);
 
 		return () => clearTimeout(timer);
 	}, []);
@@ -71,9 +87,9 @@ const IntroAnimation = () => {
 
 	return (
 		<>
-			<div className="main-container w-full h-screen bg-[var(--zen-yellow)] gSans fixed top-0 left-0 z-[4]"></div>
-			<div className="hero-container w-full h-screen relative bg-yellow-700">
-				<div className="slogan absolute z-[4] top-[60%] left-[5%] translate-y-[-50%] 2xl:text-[100px] xl:text-[60px] text-[40px] gSansLight font-bold text-[var(--zen-blue)] mix-blend-plus-lighter">
+			<div className="main-container w-full h-screen bg-[var(--zen-analog)] gSans fixed top-0 left-0 z-[4]"></div>
+			<div className="hero-container w-full h-screen relative bg-[var(--zen-comp)]">
+				<div className="slogan absolute z-[4] top-[60%] left-[5%] translate-y-[-50%] 2xl:text-[100px] xl:text-[60px] text-[40px] gSansLight font-bold text-[var(--zen-analog)] mix-blend-plus-lighter">
 					<p className="first-text opacity-0">Tu Yo</p>
 					<p className="first-text opacity-0">
 						Del <span className="gSansMedium">Futuro</span>

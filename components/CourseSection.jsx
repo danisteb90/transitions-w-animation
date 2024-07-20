@@ -24,7 +24,8 @@ export default function CourseSection() {
 		let runTimeOut;
 
 		//Cuenta para movimiento automatico
-		// let timeAutoNext = 15000;
+		let timeAutoNext = 10000;
+		let runAutoNext;
 		// let runAutoNext = setTimeout(() => {
 		// 	nextDom.click();
 		// }, timeAutoNext);
@@ -52,10 +53,10 @@ export default function CourseSection() {
 				carouselDom.classList.remove("prev");
 			}, timeRunning);
 
-			// clearTimeout(runAutoNext);
-			// runAutoNext = setTimeout(() => {
-			// 	nextDom.click();
-			// }, timeAutoNext);
+			clearTimeout(runAutoNext);
+			runAutoNext = setTimeout(() => {
+				nextDom.click();
+			}, timeAutoNext);
 		};
 	});
 
@@ -122,7 +123,7 @@ export default function CourseSection() {
 								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
 								culpa sint deserunt irure sit anim dolore.
 							</div>
-							<div className="buttons">
+							{/* <div className="buttons">
 								<Link href="/formacion-ching-i" className="button">
 									LEER MAS
 								</Link>
@@ -135,6 +136,9 @@ export default function CourseSection() {
 								<Link href="#main-course-container" className="button">
 									Inscríbete
 								</Link>
+							</div> */}
+							<div className="prox">
+								<h2>Próximamente</h2>
 							</div>
 						</div>
 					</div>
@@ -159,7 +163,7 @@ export default function CourseSection() {
 								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
 								culpa sint deserunt irure sit anim dolore.
 							</div>
-							<div className="buttons">
+							{/* <div className="buttons">
 								<Link href="/formacion-ching-i" className="button">
 									LEER MAS
 								</Link>
@@ -172,6 +176,9 @@ export default function CourseSection() {
 								<Link href="#main-course-container" className="button">
 									Inscríbete
 								</Link>
+							</div> */}
+							<div className="prox">
+								<h2>Próximamente</h2>
 							</div>
 						</div>
 					</div>
@@ -196,7 +203,7 @@ export default function CourseSection() {
 								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
 								culpa sint deserunt irure sit anim dolore.
 							</div>
-							<div className="buttons">
+							{/* <div className="buttons">
 								<Link href="/diplomado-sonoterapia" className="button">
 									LEER MAS
 								</Link>
@@ -209,6 +216,9 @@ export default function CourseSection() {
 								<Link href="#main-course-container" className="button">
 									Inscríbete
 								</Link>
+							</div> */}
+							<div className="prox">
+								<h2>Próximamente</h2>
 							</div>
 						</div>
 					</div>
@@ -233,7 +243,7 @@ export default function CourseSection() {
 								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
 								culpa sint deserunt irure sit anim dolore.
 							</div>
-							<div className="buttons">
+							{/* <div className="buttons">
 								<Link href="/maestria-sanacion-espiritual" className="button">
 									LEER MAS
 								</Link>
@@ -246,6 +256,9 @@ export default function CourseSection() {
 								<Link href="#main-course-container" className="button">
 									Inscríbete
 								</Link>
+							</div> */}
+							<div className="prox">
+								<h2>Próximamente</h2>
 							</div>
 						</div>
 					</div>
@@ -262,7 +275,7 @@ export default function CourseSection() {
 						/>
 						<div className="content">
 							<div className="title">Formación en I Ching,</div>
-							<div className="des">Description</div>
+							<div className="des">Próximamente</div>
 						</div>
 					</div>
 					<div className="item">
@@ -275,7 +288,7 @@ export default function CourseSection() {
 						/>
 						<div className="content">
 							<div className="title">El Gran Viaje del Pez Koi</div>
-							<div className="des">Description</div>
+							<div className="des">Próximamente</div>
 						</div>
 					</div>
 					<div className="item">
@@ -287,8 +300,8 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">Diplomado en Sonoterapia</div>
-							<div className="des">Description</div>
+							<div className="title wText">Diplomado en Sonoterapia</div>
+							<div className="des">Próximamente</div>
 						</div>
 					</div>
 					<div className="item">
@@ -300,10 +313,8 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title sanacion">
-								Maestría en Sanación Espiritual
-							</div>
-							<div className="des sanacion">Description</div>
+							<div className="title wText">Maestría en Sanación Espiritual</div>
+							<div className="des wText">Próximamente</div>
 						</div>
 					</div>
 					<div className="item">
@@ -315,8 +326,8 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">Diplomado en Meditación</div>
-							<div className="des">Description</div>
+							<div className="title wText">Diplomado en Meditación</div>
+							{/* <div className="des">Próximamente</div> */}
 						</div>
 					</div>
 				</div>
