@@ -227,15 +227,15 @@ body {
 }
 
 .arrows button {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #00000080;
   border: none;
   color: white;
   font-family: monospace;
   font-weight: bold;
-  font-size: large;
+  font-size: 30px;
   transition: 0.5s;
 }
 
@@ -296,10 +296,10 @@ body {
 
 /* effect next click */
 .carousel.next .list .item:nth-child(1) .img {
-  width: 150px;
+  width: 220px;
   height: 220px;
   position: absolute;
-  left: 50%;
+  left: 45%;
   bottom: 50px;
   border-radius: 20px;
   animation: showImage 0.5s linear 1 forwards;
@@ -352,10 +352,10 @@ body {
 
 @keyframes outImage {
   to {
-    width: 150px;
+    width: 220px;
     height: 220px;
     border-radius: 20px;
-    left: 50%;
+    left: 45%;
     bottom: 50px;
   }
 }
@@ -419,7 +419,11 @@ body {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1600px) {
+  .main-course-container {
+    padding: 20px;
+  }
+
   .carousel .list .item .content {
     padding-right: 0;
   }
@@ -434,6 +438,37 @@ body {
   }
 
   .arrows {
-    right: 55%;
+    right: 65%;
+    top: 75%;
+  }
+
+  .thumbnail .item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .carousel.next .thumbnail {
+    transform: translateX(180px);
+  }
+
+  .carousel.next .list .item:nth-child(1) .img {
+    width: 180px;
+    height: 180px;
+  }
+
+  @keyframes showThumbnail {
+    to {
+      width: 180px;
+    }
+  }
+
+  @keyframes outImage {
+    to {
+      width: 180px;
+      height: 180px;
+      border-radius: 20px;
+      left: 45%;
+      bottom: 50px;
+    }
   }
 }
