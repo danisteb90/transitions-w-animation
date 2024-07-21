@@ -24,8 +24,8 @@ export default function CourseSection() {
 		let runTimeOut;
 
 		//Cuenta para movimiento automatico
-		let timeAutoNext = 10000;
-		let runAutoNext;
+		// let timeAutoNext = 10000;
+		// let runAutoNext;
 		// let runAutoNext = setTimeout(() => {
 		// 	nextDom.click();
 		// }, timeAutoNext);
@@ -53,10 +53,10 @@ export default function CourseSection() {
 				carouselDom.classList.remove("prev");
 			}, timeRunning);
 
-			clearTimeout(runAutoNext);
-			runAutoNext = setTimeout(() => {
-				nextDom.click();
-			}, timeAutoNext);
+			// clearTimeout(runAutoNext);
+			// runAutoNext = setTimeout(() => {
+			// 	nextDom.click();
+			// }, timeAutoNext);
 		};
 	});
 
