@@ -10,16 +10,16 @@ const IntroAnimation = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	useEffect(() => {
-		const lenis = new Lenis();
+	// useEffect(() => {
+	// 	const lenis = new Lenis();
 
-		function raf(time) {
-			lenis.raf(time);
-			requestAnimationFrame(raf);
-		}
+	// 	function raf(time) {
+	// 		lenis.raf(time);
+	// 		requestAnimationFrame(raf);
+	// 	}
 
-		requestAnimationFrame(raf);
-	});
+	// 	requestAnimationFrame(raf);
+	// });
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -82,7 +82,10 @@ const IntroAnimation = () => {
 					ease: "power4.in",
 				},
 				"-=0.5"
-			);
+			)
+			.to(".slogan", {
+				display: "none",
+			});
 	}, []);
 
 	return (
@@ -100,7 +103,7 @@ const IntroAnimation = () => {
 					</p>
 				</div>
 				<div className="gSans absolute z-[3] w-full h-full flex items-center justify-center 2xl:p-[80px] xl:p-[50px] p-[20px]">
-					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[80px] xl:gap-[100px] gap-[10px] bg-[#00000080] rounded-xl opacity-0">
+					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[80px] xl:gap-[100px] gap-[10px] bg-[#00000080] backdrop-blur-sm rounded-xl opacity-0">
 						<Image
 							src="/Assets/Logo-Azul-Texto.webp"
 							alt="logo"
@@ -122,12 +125,10 @@ const IntroAnimation = () => {
 					</video>
 				</div>
 			</div>
-			<div
-				id="courses-container"
-				className="courses-container w-full h-screen bg-slate-600"
-			>
+			<div id="courses-container" className="courses-container w-full h-screen">
 				<CourseSection />
 			</div>
+			<div className="w-full h-screen"></div>
 		</>
 	);
 };

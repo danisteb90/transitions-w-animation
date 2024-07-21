@@ -15,7 +15,7 @@ const TransitionLink = ({ href, label }) => {
 
 	return (
 		<button
-			className="lg:text-lg text-[15px] font-semibold text-neutral-900 hover:text-neutral-700"
+			className="lg:text-lg text-[15px] font-semibold text-[var(--zen-base)] hover:text-[var(--zen-analog2)]"
 			onClick={handleClick}
 		>
 			{label}

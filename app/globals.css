@@ -118,6 +118,7 @@ body {
 .carousel .list .item .content {
   position: absolute;
   background-color: #00000080;
+  backdrop-filter: blur(4px);
   padding: 50px;
   border-radius: 20px;
   top: 15%;
@@ -412,10 +413,10 @@ body {
 .time {
   width: 0;
   height: 5px;
-  background-color: #f1683a;
+  background-color: var(--zen-triadic);
   position: absolute;
   z-index: 3;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
 
