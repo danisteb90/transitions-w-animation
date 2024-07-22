@@ -11,16 +11,16 @@ const IntroAnimation = () => {
 	// 	window.scrollTo(0, 0);
 	// }, []);
 
-	// useEffect(() => {
-	// 	const lenis = new Lenis();
+	useEffect(() => {
+		const lenis = new Lenis();
 
-	// 	function raf(time) {
-	// 		lenis.raf(time);
-	// 		requestAnimationFrame(raf);
-	// 	}
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
 
-	// 	requestAnimationFrame(raf);
-	// });
+		requestAnimationFrame(raf);
+	});
 
 	// useEffect(() => {
 	// 	const timer = setTimeout(() => {
@@ -122,7 +122,7 @@ const IntroAnimation = () => {
 				</div>
 				<div className="w-full h-full absolute">
 					<video autoPlay muted loop className="w-full h-full object-cover">
-						<source src="Assets/background1.mp4" type="video/mp4" />
+						<source src="/Assets/background1.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</div>
