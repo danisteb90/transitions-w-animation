@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import TransitionLink from "./TransitionLink";
 
 export default function CourseSection() {
 	useEffect(() => {
@@ -37,14 +38,25 @@ export default function CourseSection() {
 			);
 
 			if (type === "next") {
-				itemDom.appendChild(itemSlider[0]);
-				thumbnailDom.appendChild(itemThumbnail[0]);
-				carouselDom.classList.add("next");
+				if (itemSlider[0] instanceof Node && itemThumbnail[0] instanceof Node) {
+					itemDom.appendChild(itemSlider[0]);
+					thumbnailDom.appendChild(itemThumbnail[0]);
+					carouselDom.classList.add("next");
+				} else {
+					console.error("Uno de los elementos no es un nodo válido");
+				}
 			} else {
 				let lastItemPosition = itemSlider.length - 1;
-				itemDom.prepend(itemSlider[lastItemPosition]);
-				thumbnailDom.prepend(itemThumbnail[lastItemPosition]);
-				carouselDom.classList.add("prev");
+				if (
+					itemSlider[lastItemPosition] instanceof Node &&
+					itemThumbnail[lastItemPosition] instanceof Node
+				) {
+					itemDom.prepend(itemSlider[lastItemPosition]);
+					thumbnailDom.prepend(itemThumbnail[lastItemPosition]);
+					carouselDom.classList.add("prev");
+				} else {
+					console.error("Uno de los elementos no es un nodo válido");
+				}
 			}
 
 			clearTimeout(runTimeOut);
@@ -88,9 +100,7 @@ export default function CourseSection() {
 								culpa sint deserunt irure sit anim dolore.
 							</div>
 							<div className="buttons">
-								<Link href="/diplomado-meditacion" className="button">
-									LEER MAS
-								</Link>
+								<TransitionLink href="/diplomado-meditacion" label="LEER MAS" />
 								<Link
 									href="https://drive.google.com/uc?export=download&id=1J-GWcqlYJco0o2W0CYoGqvh0k125Mjda"
 									className="button"

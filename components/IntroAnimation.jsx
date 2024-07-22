@@ -4,11 +4,12 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import CourseSection from "./CourseSection";
 import Lenis from "lenis";
+import PilaresSection from "./PilaresSection";
 
 const IntroAnimation = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+	// useEffect(() => {
+	// 	window.scrollTo(0, 0);
+	// }, []);
 
 	// useEffect(() => {
 	// 	const lenis = new Lenis();
@@ -21,15 +22,15 @@ const IntroAnimation = () => {
 	// 	requestAnimationFrame(raf);
 	// });
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			document
-				.getElementById("courses-container")
-				.scrollIntoView({ behavior: "smooth" });
-		}, 10000);
+	// useEffect(() => {
+	// 	const timer = setTimeout(() => {
+	// 		document
+	// 			.getElementById("courses-container")
+	// 			.scrollIntoView({ behavior: "smooth" });
+	// 	}, 10000);
 
-		return () => clearTimeout(timer);
-	}, []);
+	// 	return () => clearTimeout(timer);
+	// }, []);
 
 	useEffect(() => {
 		const tl = gsap.timeline();
@@ -128,7 +129,10 @@ const IntroAnimation = () => {
 			<div id="courses-container" className="courses-container w-full h-screen">
 				<CourseSection />
 			</div>
-			<div className="w-full h-screen"></div>
+			<div className="w-full h-screen">
+				<PilaresSection />
+			</div>
+			<div className="w-full h-[500px] bg-[var(--zen-comp)]"></div>
 		</>
 	);
 };
