@@ -1,6 +1,6 @@
 "use client";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PilaresSection = () => {
 	useEffect(() => {
-		const bento = document.querySelector(".bento"),
+		const bento = document.getElementById("bento"),
 			bentoBoxes = bento.querySelectorAll(".bento_box"),
 			bentoBoxesSpan = bento.querySelectorAll(".bento_box_text > span"),
 			bentoIntro = bento.querySelectorAll(
@@ -146,7 +146,7 @@ const PilaresSection = () => {
 
 	return (
 		<div className="app">
-			<div className="bento">
+			<div className="bento" id="bento">
 				<div className="bento_container">
 					<Link
 						href="/entorno-habitat"

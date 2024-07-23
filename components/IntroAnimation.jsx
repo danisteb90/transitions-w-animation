@@ -1,10 +1,14 @@
 "use client";
 import gsap from "gsap";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import CourseSection from "./CourseSection";
 import Lenis from "lenis";
-import PilaresSection from "./PilaresSection";
+import dynamic from "next/dynamic";
+
+const DynamicBentoBoxes = dynamic(() => import("./PilaresSection.jsx"), {
+	ssr: false,
+});
 
 const IntroAnimation = () => {
 	// useEffect(() => {
@@ -130,7 +134,7 @@ const IntroAnimation = () => {
 				<CourseSection />
 			</div>
 			<div className="w-full h-screen">
-				<PilaresSection />
+				<DynamicBentoBoxes />
 			</div>
 			<div className="w-full h-[500px] bg-[var(--zen-comp)]"></div>
 		</>
