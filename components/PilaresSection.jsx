@@ -28,16 +28,19 @@ const PilaresSection = () => {
 			splitText();
 		};
 
-		gsap.timeline({
-			scrollTrigger: {
-				trigger: ".bento",
-				start: "-30% center",
-				end: "bottom center",
-				// markers: true,
-				onEnter: init,
-				once: true,
+		gsap.timeline(
+			{
+				scrollTrigger: {
+					trigger: ".bento",
+					start: "-40% center",
+					end: "bottom center",
+					// markers: true,
+					onEnter: init,
+					once: true,
+				},
 			},
-		});
+			"-=0.9"
+		);
 
 		const splitText = () => {
 			Splitting({
