@@ -131,17 +131,28 @@ const PilaresSection = () => {
 		};
 
 		const addEventListeners = () => {
-			bentoBoxes.forEach((box) => {
+			bentoBoxes.forEach((box, index) => {
 				box.addEventListener("mouseenter", (e) => {
 					const dataSpan = e.target.children[0].children[0];
-
 					e.target.classList.add("active");
 					animateInnerText(dataSpan);
 				});
-			});
-			bentoBoxes.forEach((box) => {
 				box.addEventListener("mouseleave", (e) => {
 					e.target.classList.remove("active");
+				});
+				box.addEventListener("click", () => {
+					const modal = document.querySelector(`.bento_modal${index + 1}`);
+					if (modal) {
+						modal.classList.add("active");
+					}
+				});
+			});
+
+			const closeModal = document.querySelectorAll(".bento_modal_close");
+			closeModal.forEach((close) => {
+				close.addEventListener("click", () => {
+					const modal = close.parentElement;
+					modal.classList.remove("active");
 				});
 			});
 		};
@@ -151,10 +162,7 @@ const PilaresSection = () => {
 		<div className="app">
 			<div className="bento" id="bento">
 				<div className="bento_container">
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-base)]"
-					>
+					<div className="bento_box bg-[var(--zen-base)]">
 						<div>
 							<Image
 								src="/Assets/sanacion.avif"
@@ -167,11 +175,8 @@ const PilaresSection = () => {
 								<span>Entorno, Hábitat</span>
 							</div>
 						</div>
-					</Link>
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-comp)]"
-					>
+					</div>
+					<div className="bento_box bg-[var(--zen-comp)]">
 						<div>
 							<Image
 								src="/Assets/ching1.avif"
@@ -181,14 +186,11 @@ const PilaresSection = () => {
 								className="box_image"
 							/>
 							<div className="bento_box_text">
-								<span>Consciencia Corporal, Manejo de Atención</span>
+								<span>Consciencia Corporal, Manejo de la Atención</span>
 							</div>
 						</div>
-					</Link>
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-triadic)]"
-					>
+					</div>
+					<div className="bento_box bg-[var(--zen-triadic)]">
 						<div>
 							<Image
 								src="/Assets/meditacion.avif"
@@ -198,14 +200,11 @@ const PilaresSection = () => {
 								className="box_image"
 							/>
 							<div className="bento_box_text text-black">
-								<span>Alimetación Nutrición</span>
+								<span>Alimentación, Nutrición</span>
 							</div>
 						</div>
-					</Link>
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-analog2)]"
-					>
+					</div>
+					<div className="bento_box bg-[var(--zen-analog2)]">
 						<div>
 							<Image
 								src="/Assets/sonoterapia.avif"
@@ -218,11 +217,8 @@ const PilaresSection = () => {
 								<span>Psique, Pensamiento</span>
 							</div>
 						</div>
-					</Link>
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-analog)]"
-					>
+					</div>
+					<div className="bento_box bg-[var(--zen-analog)]">
 						<div>
 							<Image
 								src="/Assets/meditacion.avif"
@@ -235,11 +231,8 @@ const PilaresSection = () => {
 								<span>Inconsciente Colectivo, Historia Personal</span>
 							</div>
 						</div>
-					</Link>
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-comp)]"
-					>
+					</div>
+					<div className="bento_box bg-[var(--zen-comp)]">
 						<div>
 							<Image
 								src="/Assets/ching1.avif"
@@ -249,14 +242,11 @@ const PilaresSection = () => {
 								className="box_image"
 							/>
 							<div className="bento_box_text text-black">
-								<span>Escencia Vital, Energía Sexual</span>
+								<span>Esencia Vital, Energía Sexual</span>
 							</div>
 						</div>
-					</Link>
-					<Link
-						href="/entorno-habitat"
-						className="bento_box bg-[var(--zen-triadic)]"
-					>
+					</div>
+					<div className="bento_box bg-[var(--zen-triadic)]">
 						<div>
 							<Image
 								src="/Assets/viaje-koi.webp"
@@ -269,21 +259,70 @@ const PilaresSection = () => {
 								<span>Parapsicología, Realidad Extrasensorial</span>
 							</div>
 						</div>
-					</Link>
+					</div>
+					<div className="bento_box bg-[var(--zen-triadic)]">
+						<div>
+							<Image
+								src="/Assets/viaje-koi.webp"
+								alt="box-image"
+								width={500}
+								height={500}
+								className="box_image"
+							/>
+							<div className="bento_box_text text-black">
+								<span>Manejo de la Atención, Atención Plena</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="bento_modals">
+					<div className="bento_modal1">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 1</p>
+					</div>
+					<div className="bento_modal2">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 2</p>
+					</div>
+					<div className="bento_modal3">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 3</p>
+					</div>
+					<div className="bento_modal4">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 4</p>
+					</div>
+					<div className="bento_modal5">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 5</p>
+					</div>
+					<div className="bento_modal6">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 6</p>
+					</div>
+					<div className="bento_modal7">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 7</p>
+					</div>
+					<div className="bento_modal8">
+						<div className="bento_modal_close">X</div>
+						<p>Modal 8</p>
+					</div>
 				</div>
 
 				<div className="bento_intro">
 					<div className="bento_intro_row">
 						<h1>
-							Pilares <span>De</span>
-							<span>La</span>
+							Ocho<span>Pilares</span>
+							<span>De</span>
 						</h1>
 					</div>
 					<div className="bento_intro_row">
-						<h1>Flor</h1>
+						<h1>Transformación</h1>
 					</div>
 					<div className="bento_intro_row">
-						<h1>Dorada</h1>
+						<h1>Existencial</h1>
 					</div>
 				</div>
 			</div>

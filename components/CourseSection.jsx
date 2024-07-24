@@ -76,7 +76,7 @@ export default function CourseSection() {
 		<main id="main-course-container" className="main-course-container">
 			{/* Carousel */}
 			<div className="carousel">
-				<h2 className="courses-title">Cursos</h2>
+				{/* <h2 className="courses-title">Cursos</h2> */}
 				<div className="list">
 					<div className="item">
 						<Image
@@ -87,7 +87,7 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Cheng Tuan Li</div>
+							<div className="author">Chen Tuan Li</div>
 							<div className="title">DIPLOMADO EN</div>
 							<div className="topic">MEDITACIÓN</div>
 							<div className="des">
@@ -100,16 +100,19 @@ export default function CourseSection() {
 								culpa sint deserunt irure sit anim dolore.
 							</div>
 							<div className="buttons">
-								<TransitionLink href="/diplomado-meditacion" label="LEER MAS" />
+								<TransitionLink href="/diplomado-meditacion" label="Leer Más" />
 								<Link
 									href="https://drive.google.com/uc?export=download&id=1J-GWcqlYJco0o2W0CYoGqvh0k125Mjda"
 									className="button"
 								>
-									Brochure
+									Descargar PDF
 								</Link>
 								<Link href="#main-course-container" className="button">
 									Inscríbete
 								</Link>
+							</div>
+							<div className="des mt-[20px]">
+								Inscripciones hasta el 18 de Septiembre
 							</div>
 						</div>
 					</div>
@@ -122,7 +125,7 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Cheng Tuan Li</div>
+							<div className="author">Chen Tuan Li</div>
 							<div className="title">FORMACIÓN EN</div>
 							<div className="topic">CHING I</div>
 							<div className="des">
@@ -162,9 +165,9 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Cheng Tuan Li</div>
-							<div className="title">EL GAN VIAJE</div>
-							<div className="topic">DEL PEZ KOI</div>
+							<div className="author">Chen Tuan Li</div>
+							<div className="title">Formación en Realización Espiritual</div>
+							<div className="topic">El Gran Viaje del Pez Koi</div>
 							<div className="des">
 								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
 								nisi est aliqua excepteur enim voluptate occaecat ut consequat
@@ -202,7 +205,7 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Cheng Tuan Li</div>
+							<div className="author">Chen Tuan Li</div>
 							<div className="title">DIMPLMADO EN</div>
 							<div className="topic">SONOTERAPIA</div>
 							<div className="des">
@@ -242,9 +245,11 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Cheng Tuan Li</div>
-							<div className="title sanacion">MAESTRÍA EN</div>
-							<div className="topic sanacion">SANACIÓN</div>
+							<div className="author">Chen Tuan Li</div>
+							<div className="title sanacion">
+								Maestría en Sanación Espiritual
+							</div>
+							<div className="topic sanacion">Retorno al Hogar</div>
 							<div className="des">
 								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
 								nisi est aliqua excepteur enim voluptate occaecat ut consequat
@@ -337,8 +342,10 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title wText">Diplomado en Meditación</div>
-							{/* <div className="des">Próximamente</div> */}
+							<div className="title">Diplomado en Meditación</div>
+							<div className="des wText">
+								Inscripciones hasta el 18 de Septiembre
+							</div>
 						</div>
 					</div>
 				</div>

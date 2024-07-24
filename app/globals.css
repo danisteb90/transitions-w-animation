@@ -15,6 +15,8 @@
   --zen-analog: #0e56ab;
   --zen-analog2: #0eacad;
   --zen-triadic: #ab0e55;
+  --zen-orange: #AC6B0E;
+  --zen-skyblue: #3EB8EB;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +28,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #496AA1;
+  background: var(--zen-orange);
   border-radius: 10px;
 }
 
@@ -36,29 +38,30 @@
   }
 }
 
+/*GeneralSans es Gambetta*/
+
 @font-face {
   font-family: "GeneralSans";
-  src: url("/Fonts/GeneralSans-Regular.woff") format("woff");
+  src: url("/Fonts/Gambetta-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "GeneralSans-Light";
-  src: url("/Fonts/GeneralSans-Light.woff") format("woff");
+  src: url("/Fonts/Gambetta-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "GeneralSans-Medium";
-  src: url("/Fonts/GeneralSans-Medium.woff") format("woff");
+  src: url("/Fonts/Gambetta-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "GeneralSans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -77,8 +80,8 @@ body {
 .main-course-container {
   overflow: hidden;
   position: relative;
-  background-color: white;
-  font-family: "GeneralSans-Light", sans-serif;
+  background: rgb(172, 107, 14);
+  background: linear-gradient(180deg, rgba(172, 107, 14, 1) 0%, rgba(189, 138, 65, 1) 35%, rgba(209, 174, 123, 1) 69%, rgba(224, 200, 166, 1) 85%, rgba(255, 255, 255, 1) 100%);
   padding: 60px;
   width: 100vw;
   height: 100vh;
@@ -122,7 +125,7 @@ body {
   padding: 50px;
   border-radius: 20px;
   top: 15%;
-  width: 1140px;
+  width: 100%;
   max-width: 80%;
   left: 45%;
   transform: translateX(-50%);
@@ -138,6 +141,8 @@ body {
 
 .carousel .list .item .content .des {
   color: white;
+  padding-right: 5%;
+
 }
 
 .carousel .list .item .content .title,
@@ -146,7 +151,7 @@ body {
   font-weight: bolder;
   font-size: 5em;
   line-height: 1.3em;
-  color: var(--zen-comp);
+  color: var(--zen-skyblue);
 }
 
 .carousel .list .item .content .topic {
@@ -155,6 +160,8 @@ body {
 
 .carousel .list .item .content .buttons {
   margin-top: 20px;
+  font-family: "GeneralSans-Medium", sans-serif;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -173,10 +180,11 @@ body {
   background-color: #00000080;
   padding: 10px;
   border-radius: 10px;
-  width: 110px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 
 /* Thumbnail */
@@ -452,7 +460,7 @@ body {
 
   .arrows {
     right: 65%;
-    top: 75%;
+    top: 78%;
   }
 
   .thumbnail .item {
@@ -494,6 +502,8 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: "GeneralSans", sans-serif;
+  background: rgb(172, 107, 14);
+  background: linear-gradient(0deg, rgba(172, 107, 14, 1) 0%, rgba(189, 138, 65, 1) 35%, rgba(209, 174, 123, 1) 69%, rgba(224, 200, 166, 1) 85%, rgba(255, 255, 255, 1) 100%);
 }
 
 .bento_container {
@@ -549,7 +559,7 @@ body {
 }
 
 .bento_box:nth-child(1) {
-  grid-area: 1/1/3/4;
+  grid-area: 1/1/2/4;
 }
 
 .bento_box:nth-child(2) {
@@ -576,6 +586,10 @@ body {
   grid-area: 1/6/3/9;
 }
 
+.bento_box:nth-child(8) {
+  grid-area: 2/1/3/4;
+}
+
 .bento_box_text {
   overflow: hidden;
 }
@@ -586,6 +600,75 @@ body {
   font-weight: bold;
 }
 
+/*Bento Modal*/
+
+.bento_modals {
+  font-family: "GeneralSans";
+}
+
+.bento_modal1,
+.bento_modal2,
+.bento_modal3,
+.bento_modal4,
+.bento_modal5,
+.bento_modal6,
+.bento_modal7,
+.bento_modal8 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.32s ease-in-out, visibility 0.32s ease-in-out;
+
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  max-height: 600px;
+  border-radius: 1rem;
+  background-color: rgba(48, 48, 48, 0.5);
+  backdrop-filter: blur(1rem);
+  --webkit-backdrop-filter: blur(1rem);
+  padding: 20px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bento_modal1.active,
+.bento_modal2.active,
+.bento_modal3.active,
+.bento_modal4.active,
+.bento_modal5.active,
+.bento_modal6.active,
+.bento_modal7.active,
+.bento_modal8.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.32s ease-in-out, visibility 0.32s ease-in-out;
+}
+
+.bento_modal_close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.bento_modals p {
+  font-size: 25px;
+  color: white;
+}
+
+/*Bento Intro*/
+
 .bento_intro {
   position: absolute;
   left: 50%;
@@ -595,7 +678,7 @@ body {
 
   width: 100%;
   text-align: center;
-  line-height: 85px;
+  line-height: 110px;
 }
 
 .bento_intro_row {

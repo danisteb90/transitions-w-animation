@@ -26,15 +26,15 @@ const IntroAnimation = () => {
 		requestAnimationFrame(raf);
 	});
 
-	// useEffect(() => {
-	// 	const timer = setTimeout(() => {
-	// 		document
-	// 			.getElementById("courses-container")
-	// 			.scrollIntoView({ behavior: "smooth" });
-	// 	}, 10000);
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			document
+				.getElementById("courses-container")
+				.scrollIntoView({ behavior: "smooth" });
+		}, 10000);
 
-	// 	return () => clearTimeout(timer);
-	// }, []);
+		return () => clearTimeout(timer);
+	}, []);
 
 	useEffect(() => {
 		const tl = gsap.timeline();
@@ -95,9 +95,9 @@ const IntroAnimation = () => {
 
 	return (
 		<>
-			<div className="main-container w-full h-screen bg-[var(--zen-analog)] gSans fixed top-0 left-0 z-[4]"></div>
+			<div className="main-container w-full h-screen bg-gradient-to-r from-[var(--zen-base)] to-neutral-300 gSans fixed top-0 left-0 z-[4]"></div>
 			<div className="hero-container w-full h-screen relative bg-[var(--zen-comp)]">
-				<div className="slogan absolute z-[4] top-[65%] left-[5%] translate-y-[-50%] 2xl:text-[100px] xl:text-[80px] text-[40px] gSansLight font-bold text-[var(--zen-analog)] mix-blend-plus-lighter">
+				<div className="slogan absolute z-[4] top-[69%] left-[5%] translate-y-[-50%] 2xl:text-[140px] xl:text-[100px] text-[40px] gSansLight font-bold text-[var(--zen-analog)] mix-blend-plus-lighter leading-tight">
 					<p className="first-text opacity-0">Tu Yo</p>
 					<p className="first-text opacity-0">
 						Del <span className="gSansMedium">Futuro</span>
@@ -108,25 +108,24 @@ const IntroAnimation = () => {
 					</p>
 				</div>
 				<div className="gSans absolute z-[3] w-full h-full flex items-center justify-center 2xl:p-[80px] xl:p-[50px] p-[20px]">
-					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[80px] xl:gap-[100px] gap-[10px] bg-[#00000080] backdrop-blur-sm rounded-xl opacity-0">
+					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[30px] xl:gap-[15px] gap-[10px] bg-[#00000080] backdrop-blur-sm rounded-xl opacity-0">
 						<Image
 							src="/Assets/Logo-Azul-Texto.webp"
 							alt="logo"
 							width={300}
 							height={400}
-							className="logo 2xl:w-[250px] md:w-[200px] w-[120px] opacity-0"
+							className="logo 2xl:w-[250px] md:w-[280px] w-[120px] opacity-0"
 						/>
-						<p className="third-text md:w-[700px] w-[360px] 2xl:text-[26px] text-[18px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
-							La primera escuela completamente enfocada en la realización
-							espiritual, basada en los ocho pilares primordiales de la flor
-							dorada según la filosofía del tao y las escuelas ancestrales fang
-							shi del yin-yang.
+						<p className="third-text md:w-[650px] w-[360px] 2xl:text-[26px] text-[32px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
+							La primera Escuela de realización espiritual, basada en los ocho
+							pilares de transformación existencial descritos por las Escuelas
+							Ancestrales del Yin-Yang.
 						</p>
 					</div>
 				</div>
 				<div className="w-full h-full absolute">
 					<video autoPlay muted loop className="w-full h-full object-cover">
-						<source src="/Assets/background1.mp4" type="video/mp4" />
+						<source src="/Assets/background2.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</div>
@@ -136,7 +135,7 @@ const IntroAnimation = () => {
 			<div className="w-full h-screen">
 				<DynamicBentoBoxes />
 			</div>
-			<div className="w-full h-[500px] bg-[var(--zen-comp)]"></div>
+			<div className="w-full h-[500px] bg-[var(--zen-orange)]"></div>
 		</>
 	);
 };

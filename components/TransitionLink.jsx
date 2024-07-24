@@ -15,7 +15,7 @@ const TransitionLink = ({ href, label }) => {
 
 	return (
 		<button
-			className="gSans lg:text-sm text-[15px] p-[12px] bg-[#00000080] rounded-[10px] flex items-center justify-center text-[var(--zen-white)]"
+			className="gSans lg:text-[18px] text-[15px] p-[11px] bg-[#00000080] rounded-[10px] flex items-center justify-center text-[var(--zen-white)]"
 			onClick={handleClick}
 		>
 			{label}
