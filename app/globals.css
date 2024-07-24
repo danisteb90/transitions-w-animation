@@ -231,7 +231,7 @@ body {
 }
 
 .thumbnail .item .content .wText {
-  color: white !important;
+  color: var(--zen-white) !important;
 }
 
 /* arrows */

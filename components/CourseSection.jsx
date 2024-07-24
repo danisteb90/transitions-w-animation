@@ -118,7 +118,7 @@ export default function CourseSection() {
 					</div>
 					<div className="item">
 						<Image
-							src="/Assets/ching1.avif"
+							src="/Assets/formacion-ching.avif"
 							alt="back"
 							width={1024}
 							height={1024}
@@ -158,7 +158,7 @@ export default function CourseSection() {
 					</div>
 					<div className="item">
 						<Image
-							src="/Assets/viaje-koi.webp"
+							src="/Assets/realizacion-espiritual.avif"
 							alt="back"
 							width={1024}
 							height={1024}
@@ -238,7 +238,7 @@ export default function CourseSection() {
 					</div>
 					<div className="item">
 						<Image
-							src="/Assets/sanacion.avif"
+							src="/Assets/sanacion-espiritual.avif"
 							alt="back"
 							width={1024}
 							height={1024}
@@ -283,27 +283,27 @@ export default function CourseSection() {
 				<div className="thumbnail">
 					<div className="item">
 						<Image
-							src="/Assets/ching1.avif"
+							src="/Assets/formacion-ching.avif"
 							alt="back"
 							width={1024}
 							height={1024}
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">Formación en I Ching,</div>
+							<div className="title wText">Formación en I Ching,</div>
 							<div className="des">Próximamente</div>
 						</div>
 					</div>
 					<div className="item">
 						<Image
-							src="/Assets/viaje-koi.webp"
+							src="/Assets/realizacion-espiritual.avif"
 							alt="back"
 							width={1024}
 							height={1024}
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">El Gran Viaje del Pez Koi</div>
+							<div className="title wText">El Gran Viaje del Pez Koi</div>
 							<div className="des">Próximamente</div>
 						</div>
 					</div>
@@ -322,14 +322,14 @@ export default function CourseSection() {
 					</div>
 					<div className="item">
 						<Image
-							src="/Assets/sanacion.avif"
+							src="/Assets/sanacion-espiritual.avif"
 							alt="back"
 							width={1024}
 							height={1024}
 							className="img"
 						/>
 						<div className="content">
-							<div className="title wText">Maestría en Sanación Espiritual</div>
+							<div className="title">Maestría en Sanación Espiritual</div>
 							<div className="des wText">Próximamente</div>
 						</div>
 					</div>
