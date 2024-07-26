@@ -15,10 +15,10 @@ const TransitionLink = ({ href, label }) => {
 
 	return (
 		<button
-			className="gSans lg:text-[18px] text-[15px] p-[11px] bg-[#00000080] rounded-[10px] flex items-center justify-center text-[var(--zen-white)]"
+			className="gSans lg:text-[16px] text-[15px] p-[11px] bg-[#00000080] rounded-[10px] flex items-center justify-center text-[var(--zen-white)]"
 			onClick={handleClick}
 		>
-			{label}
+			<p className="hover:text-[var(--zen-lightorange)]">{label}</p>
 		</button>
 	);
 };

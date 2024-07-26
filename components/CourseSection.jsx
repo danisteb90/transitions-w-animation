@@ -206,7 +206,7 @@ export default function CourseSection() {
 						/>
 						<div className="content">
 							<div className="author">Chen Tuan Li</div>
-							<div className="title">DIMPLMADO EN</div>
+							<div className="title">DIPLOMADO EN</div>
 							<div className="topic">SONOTERAPIA</div>
 							<div className="des">
 								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
@@ -249,7 +249,7 @@ export default function CourseSection() {
 							<div className="title sanacion">
 								Maestría en Sanación Espiritual
 							</div>
-							<div className="topic sanacion">Retorno al Hogar</div>
+							<div className="topic sanacion">La Luz del Cambio</div>
 							<div className="des">
 								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
 								nisi est aliqua excepteur enim voluptate occaecat ut consequat
@@ -329,8 +329,8 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">Maestría en Sanación Espiritual</div>
-							<div className="des wText">Próximamente</div>
+							<div className="title wText">Maestría en Sanación Espiritual</div>
+							<div className="des">Próximamente</div>
 						</div>
 					</div>
 					<div className="item">
@@ -342,10 +342,8 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">Diplomado en Meditación</div>
-							<div className="des wText">
-								Inscripciones hasta el 18 de Septiembre
-							</div>
+							<div className="title wText">Diplomado en Meditación</div>
+							<div className="des">Inscripciones hasta el 18 de Septiembre</div>
 						</div>
 					</div>
 				</div>

@@ -26,15 +26,15 @@ const IntroAnimation = () => {
 		requestAnimationFrame(raf);
 	});
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			document
-				.getElementById("courses-container")
-				.scrollIntoView({ behavior: "smooth" });
-		}, 10000);
+	// useEffect(() => {
+	// 	const timer = setTimeout(() => {
+	// 		document
+	// 			.getElementById("courses-container")
+	// 			.scrollIntoView({ behavior: "smooth" });
+	// 	}, 10000);
 
-		return () => clearTimeout(timer);
-	}, []);
+	// 	return () => clearTimeout(timer);
+	// }, []);
 
 	useEffect(() => {
 		const tl = gsap.timeline();
@@ -97,7 +97,7 @@ const IntroAnimation = () => {
 		<>
 			<div className="main-container w-full h-screen bg-gradient-to-r from-[var(--zen-base)] to-neutral-300 gSans fixed top-0 left-0 z-[4]"></div>
 			<div className="hero-container w-full h-screen relative bg-[var(--zen-comp)]">
-				<div className="slogan absolute z-[4] top-[69%] left-[5%] translate-y-[-50%] 2xl:text-[140px] xl:text-[100px] text-[40px] gSansLight font-bold text-[var(--zen-comp)] mix-blend-color-dodge leading-tight">
+				<div className="slogan absolute z-[4] top-[69%] left-[5%] translate-y-[-50%] 2xl:text-[140px] xl:text-[100px] text-[40px] gSansLight font-bold text-[var(--zen-lightorange)] mix-blend-color-dodge leading-tight">
 					<p className="first-text opacity-0">Tu Yo</p>
 					<p className="first-text opacity-0">
 						Del <span className="gSansMedium">Futuro</span>
@@ -125,7 +125,7 @@ const IntroAnimation = () => {
 				</div>
 				<div className="w-full h-full absolute">
 					<video autoPlay muted loop className="w-full h-full object-cover">
-						<source src="/Assets/background1.mp4" type="video/mp4" />
+						<source src="/Assets/background3.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</div>

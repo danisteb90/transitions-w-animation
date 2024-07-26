@@ -17,6 +17,8 @@
   --zen-triadic: #ab0e55;
   --zen-orange: #AC6B0E;
   --zen-skyblue: #3EB8EB;
+  --zen-lightorange: #f39614;
+  --zen-pilaresanim: #333333;
 }
 
 ::-webkit-scrollbar {
@@ -136,13 +138,12 @@ body {
 .carousel .list .item .content .author {
   font-weight: bolder;
   letter-spacing: 10px;
-  color: white;
+  color: var(--zen-white);
 }
 
 .carousel .list .item .content .des {
-  color: white;
+  color: var(--zen-white);
   padding-right: 5%;
-
 }
 
 .carousel .list .item .content .title,
@@ -161,12 +162,15 @@ body {
 .carousel .list .item .content .buttons {
   margin-top: 20px;
   font-family: "GeneralSans-Medium", sans-serif;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 15px;
   color: var(--zen-white);
+}
+
+.carousel .list .item .content .buttons .button:hover {
+  color: var(--zen-lightorange);
 }
 
 .carousel .list .item .content .prox {
@@ -184,7 +188,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Thumbnail */
@@ -222,12 +226,14 @@ body {
 .thumbnail .item .content .title {
   font-family: "GeneralSans-Medium", sans-serif;
   font-size: 16px;
+  text-shadow: 1.2px 1.2px black;
 }
 
 .thumbnail .item .content .des {
   font-family: "GeneralSans-Medium", sans-serif;
   font-size: 15px;
-  color: var(--zen-base);
+  color: var(--zen-lightorange);
+  text-shadow: 1px 1px black;
 }
 
 .thumbnail .item .content .wText {
@@ -459,8 +465,8 @@ body {
   }
 
   .arrows {
-    right: 65%;
-    top: 78%;
+    right: 67%;
+    top: 81%;
   }
 
   .thumbnail .item {
@@ -590,8 +596,15 @@ body {
   grid-area: 2/1/3/4;
 }
 
+.bento_box_content {
+  opacity: 90%;
+}
+
 .bento_box_text {
   overflow: hidden;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: "GeneralSans", sans-serif;
 }
 
 .bento_box_text span {
@@ -679,6 +692,8 @@ body {
   width: 100%;
   text-align: center;
   line-height: 110px;
+  color: var(--zen-pilaresanim);
+  mix-blend-mode: overlay;
 }
 
 .bento_intro_row {

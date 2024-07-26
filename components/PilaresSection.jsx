@@ -165,7 +165,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-base)]">
 						<div>
 							<Image
-								src="/Assets/sanacion.avif"
+								src="/Assets/entorno.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -176,10 +176,10 @@ const PilaresSection = () => {
 							</div>
 						</div>
 					</div>
-					<div className="bento_box bg-[var(--zen-comp)]">
-						<div>
+					<div className="bento_box bg-[var(--zen-lightorange)]">
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/ching1.avif"
+								src="/Assets/consciencia-corporal.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -190,24 +190,24 @@ const PilaresSection = () => {
 							</div>
 						</div>
 					</div>
-					<div className="bento_box bg-[var(--zen-triadic)]">
-						<div>
+					<div className="bento_box bg-[var(--zen-sky)]">
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/meditacion.avif"
+								src="/Assets/alimentacion.avif"
 								alt="box-image"
 								width={500}
 								height={500}
 								className="box_image"
 							/>
-							<div className="bento_box_text text-black">
+							<div className="bento_box_text">
 								<span>Alimentación, Nutrición</span>
 							</div>
 						</div>
 					</div>
 					<div className="bento_box bg-[var(--zen-analog2)]">
-						<div>
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/sonoterapia.avif"
+								src="/Assets/psique.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -219,9 +219,9 @@ const PilaresSection = () => {
 						</div>
 					</div>
 					<div className="bento_box bg-[var(--zen-analog)]">
-						<div>
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/meditacion.avif"
+								src="/Assets/inconsciente-colectivo.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -232,10 +232,10 @@ const PilaresSection = () => {
 							</div>
 						</div>
 					</div>
-					<div className="bento_box bg-[var(--zen-comp)]">
-						<div>
+					<div className="bento_box bg-[var(--zen-lightorange)]">
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/ching1.avif"
+								src="/Assets/esencia-vital.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -247,9 +247,9 @@ const PilaresSection = () => {
 						</div>
 					</div>
 					<div className="bento_box bg-[var(--zen-triadic)]">
-						<div>
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/viaje-koi.webp"
+								src="/Assets/parapsicologia.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -261,9 +261,9 @@ const PilaresSection = () => {
 						</div>
 					</div>
 					<div className="bento_box bg-[var(--zen-triadic)]">
-						<div>
+						<div className="bento_box_content">
 							<Image
-								src="/Assets/viaje-koi.webp"
+								src="/Assets/atencion-plena.avif"
 								alt="box-image"
 								width={500}
 								height={500}
