@@ -343,7 +343,7 @@ export default function CourseSection() {
 						/>
 						<div className="content">
 							<div className="title wText">Diplomado en Meditación</div>
-							<div className="des">Inscripciones hasta el 18 de Septiembre</div>
+							<div className="des">Inscripciones hasta el 18 de septiembre</div>
 						</div>
 					</div>
 				</div>
