@@ -112,7 +112,7 @@ export default function CourseSection() {
 								</Link>
 							</div>
 							<div className="des mt-[20px]">
-								Inscripciones hasta el 18 de septiembre
+								Inscripciones hasta el 18 de septiembre.
 							</div>
 						</div>
 					</div>
