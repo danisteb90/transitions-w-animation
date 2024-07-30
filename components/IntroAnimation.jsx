@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import CourseSection from "./CourseSection";
 import Lenis from "lenis";
 import dynamic from "next/dynamic";
+import Footer from "./Footer";
+import FooterMarquee from "./FooterMarquee";
 
 const DynamicBentoBoxes = dynamic(() => import("./PilaresSection.jsx"), {
 	ssr: false,
@@ -135,7 +137,10 @@ const IntroAnimation = () => {
 			<div className="w-full h-screen">
 				<DynamicBentoBoxes />
 			</div>
-			<div className="w-full h-[500px] bg-[var(--zen-orange)]"></div>
+			<div className="w-full h-[250px] bg-[var(--zen-pilaresanim)]">
+				<FooterMarquee />
+				<Footer />
+			</div>
 		</>
 	);
 };

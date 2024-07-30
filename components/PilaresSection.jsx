@@ -2,13 +2,14 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Splitting from "splitting";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const PilaresSection = () => {
+	const [activeModal, setActiveModal] = useState(null);
+
 	useEffect(() => {
 		const bento = document.getElementById("bento"),
 			bentoBoxes = bento.querySelectorAll(".bento_box"),
@@ -34,7 +35,6 @@ const PilaresSection = () => {
 					trigger: ".bento",
 					start: "-40% center",
 					end: "bottom center",
-					// markers: true,
 					onEnter: init,
 					once: true,
 				},
@@ -76,7 +76,6 @@ const PilaresSection = () => {
 					delay: 1,
 					onComplete: () => {
 						animateBoxes();
-						//Borra el elemento intro de la escena
 						const bentoIntro = document.querySelector(".bento_intro");
 						if (bentoIntro) {
 							bentoIntro.remove();
@@ -141,6 +140,7 @@ const PilaresSection = () => {
 					e.target.classList.remove("active");
 				});
 				box.addEventListener("click", () => {
+					setActiveModal(`.bento_modal${index + 1}`);
 					const modal = document.querySelector(`.bento_modal${index + 1}`);
 					if (modal) {
 						modal.classList.add("active");
@@ -151,6 +151,7 @@ const PilaresSection = () => {
 			const closeModal = document.querySelectorAll(".bento_modal_close");
 			closeModal.forEach((close) => {
 				close.addEventListener("click", () => {
+					setActiveModal(null);
 					const modal = close.parentElement;
 					modal.classList.remove("active");
 				});
@@ -165,7 +166,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-base)]">
 						<div>
 							<Image
-								src="/Assets/entorno.avif"
+								src="/Assets/entorno.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -179,7 +180,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-lightorange)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/consciencia-corporal.avif"
+								src="/Assets/consciencia-corporal.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -193,7 +194,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-sky)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/alimentacion.avif"
+								src="/Assets/alimentacion.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -207,7 +208,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-analog2)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/psique.avif"
+								src="/Assets/psique.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -221,7 +222,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-analog)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/inconsciente-colectivo.avif"
+								src="/Assets/inconsciente-colectiva.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -235,7 +236,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-lightorange)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/esencia-vital.avif"
+								src="/Assets/energia-vital.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -249,7 +250,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-triadic)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/parapsicologia.avif"
+								src="/Assets/parapsicologia.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -263,7 +264,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-triadic)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/atencion-plena.avif"
+								src="/Assets/atencion-plena.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -276,38 +277,160 @@ const PilaresSection = () => {
 					</div>
 				</div>
 
+				<div className={`bento_overlay ${activeModal ? "active" : ""}`}></div>
+
 				<div className="bento_modals">
-					<div className="bento_modal1">
+					<div
+						className={`bento_modal1 ${
+							activeModal === "bento_modal1" ? "active" : ""
+						}`}
+					>
 						<div className="bento_modal_close">X</div>
-						<p>Modal 1</p>
+						<div className="bento_modal_content">
+							<h2>Entorno, hábitat</h2>
+							<p>
+								<span className="underline mr-2">
+									Un Retorno a Nuestro Primer Hogar.{" "}
+								</span>{" "}
+								La comprensión del entorno en lo macro: las condiciones externas
+								(naturaleza, vínculos, hogar), y en lo micro: el cuerpo que cada
+								Ser habita, es importante para experimentar la Unidad, una
+								liberación de la sensación de separación que nos permita
+								adentrarnos y profundizar en las relaciones que establecen las
+								leyes naturales en el entorno donde desarrollamos nuestra vida.
+							</p>
+						</div>
 					</div>
-					<div className="bento_modal2">
+					<div
+						className={`bento_modal2 ${
+							activeModal === ".bento_modal2" ? "active" : ""
+						}`}
+					>
 						<div className="bento_modal_close">X</div>
-						<p>Modal 2</p>
+						<div className="bento_modal_content">
+							<h2>Consciencia Corporal, Manejo de la Atención</h2>
+							<p>
+								<span className="underline mr-2">
+									Una Presencia en Libertad.{" "}
+								</span>
+								La atención va más allá de nuestro pensamiento y de nuestro
+								movimiento, es la presencia de nuestro Ser que atestigua el
+								constante cambio de los acontecimientos que transitamos. Para
+								desarrollarla, es necesario aprender a relacionarnos con los
+								demás desde la espontaneidad, reconocer la brújula de nuestra
+								intuición para fluir con la vida y valorar nuestras sensaciones
+								corporales en la toma de decisiones.
+							</p>
+						</div>
 					</div>
 					<div className="bento_modal3">
 						<div className="bento_modal_close">X</div>
-						<p>Modal 3</p>
+						<div className="bento_modal_content">
+							<h2>Alimentación, Nutrición</h2>
+							<p>
+								<span className="underline mr-2">
+									Una Epigenética Armónica e Integral.
+								</span>
+								Nos estamos alimentando en todo momento por medio de los
+								vínculos que forjamos, las actividades que realizamos, los
+								alimentos que ingerimos, en fin, de alguna manera, cualquier
+								excitación externa nos deja una impresión con su energía, la
+								cual, genera un estímulo y una influencia en nuestro estado
+								interno. En este sentido, es esencial saber identificar qué es
+								lo que realmente nutre nuestro Ser y, por ende, qué favorece
+								nuestro proceso de realización espiritual.
+							</p>
+						</div>
 					</div>
 					<div className="bento_modal4">
 						<div className="bento_modal_close">X</div>
-						<p>Modal 4</p>
+						<div className="bento_modal_content">
+							<h2>Psique, Pensamiento</h2>
+							<p>
+								<span className="underline mr-2">
+									Un Psicoprograma de Libertad.
+								</span>
+								Las creencias, los marcos conceptuales, las experiencias y los
+								aprendizajes de vida, constituyen el entendimiento de nuestra
+								realidad y, en todos los casos, vivimos nuestras experiencias en
+								función de estos “programas mentales”. Independientemente de
+								estas ideas, mediante la aplicación de diversas técnicas,
+								aspiramos a generar en nuestro estado mental, una actitud
+								psíquica libre de todas las proyecciones disonantes y
+								limitantes.
+							</p>
+						</div>
 					</div>
 					<div className="bento_modal5">
 						<div className="bento_modal_close">X</div>
-						<p>Modal 5</p>
+						<div className="bento_modal_content">
+							<h2>Inconsciente Colectivo, Historia Personal</h2>
+							<p>
+								<span className="underline mr-2">
+									El Encuentro con la Semilla Primordial.
+								</span>
+								La historia, la cultura, la educación y la religión del
+								colectivo con el cual nos identificamos, crean memorias en
+								nuestro inconsciente que determinan nuestras experiencias.
+								Nuestro propósito es liberarnos de esas memorias y procurar que,
+								desde nuestra auténtica naturaleza, exploremos la vida en
+								plenitud, sin miedos ni prejuicios, libres de toda proyección
+								emanada de nuestra historia personal y colectiva.
+							</p>
+						</div>
 					</div>
 					<div className="bento_modal6">
 						<div className="bento_modal_close">X</div>
-						<p>Modal 6</p>
+						<div className="bento_modal_content">
+							<h2>Esencia Vital, Energía Sexual</h2>
+							<p>
+								<span className="underline mr-2">
+									Activando el Vehículo de Luz.
+								</span>
+								A partir de diferentes técnicas de autoconocimiento,
+								autosanación y autorrealización, buscamos que nuestra vida sea
+								un proceso consciente que nos permita reconocer hacia dónde
+								direccionar nuestra energía y en qué momento hacerlo. Y, de esta
+								forma, lograr que nuestro recorrido hacia el “Último Viaje” sea
+								ligero, sosegado y dichoso, viviéndolo desde la integración de
+								nuestra esencia vital.
+							</p>
+						</div>
 					</div>
 					<div className="bento_modal7">
 						<div className="bento_modal_close">X</div>
-						<p>Modal 7</p>
+						<div className="bento_modal_content">
+							<h2>Parapsicología, Realidad Extrasensorial</h2>
+							<p>
+								<span className="underline mr-2">Al Otro Lado del Espejo.</span>
+								Nuestra realidad humana se desarrolla en diversas dimensiones
+								como la emocional, la psíquica, la corporal, la social… Y,
+								también, la energética y sutil, donde la intuición, la
+								clarividencia, los desdoblamientos o las cualidades mediúmnicas
+								se manifiestan y adquieren relevancia dentro de nuestro proceso
+								de autoconocimiento. Tomar consciencia de esta dimensión e
+								integrarla de forma natural, sin prejuicios, nos brinda la
+								posibilidad de acceder a los dones místicos que habitan en
+								nuestro interior.
+							</p>
+						</div>
 					</div>
 					<div className="bento_modal8">
 						<div className="bento_modal_close">X</div>
-						<p>Modal 8</p>
+						<div className="bento_modal_content">
+							<h2>Manejo de la Atención, Atención Plena</h2>
+							<p>
+								<span className="underline mr-2">
+									La Liberación de Nuestra Presencia.
+								</span>
+								La atención va más allá de nuestro pensamiento o de nuestro
+								movimiento, es la presencia de nuestro Ser que atestigua el
+								constante cambio de los acontecimientos que transitamos.
+								Adquirir una Atención Plena, más allá de lo convencional, nos
+								brinda la posibilidad de presenciar la Belleza que nos rodea y
+								tomar consciencia del sincrodestino que todos compartimos.
+							</p>
+						</div>
 					</div>
 				</div>
 

@@ -80,24 +80,30 @@ export default function CourseSection() {
 				<div className="list">
 					<div className="item">
 						<Image
-							src="/Assets/meditacion.avif"
+							src="/Assets/diplomado-meditacion.avif"
 							alt="back"
 							width={1024}
 							height={1024}
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Chen Tuan Li</div>
-							<div className="title">DIPLOMADO EN</div>
-							<div className="topic">MEDITACIÓN</div>
+							<div className="title">
+								DIPLOMADO EN<span className="topic"> MEDITACIÓN</span>
+							</div>
+
 							<div className="des">
-								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
-								nisi est aliqua excepteur enim voluptate occaecat ut consequat
-								nisi. Veniam exercitation irure ullamco ullamco aute aliquip
-								nostrud velit et minim. Sit voluptate deserunt consectetur
-								eiusmod aute incididunt deserunt excepteur elit culpa tempor
-								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
-								culpa sint deserunt irure sit anim dolore.
+								Tu tiempo es limitado, así que no lo malgastes viviendo la vida
+								de alguien distinto de quien realmente eres. Aprende a vaciarte,
+								y la Plenitud de la existencia colmará tu Ser. Para ello, te
+								ofrecemos el primer Diplomado en Meditación basado en las ocho
+								fases de una experiencia cúlmine descritas por los grandes
+								sabios y avatares de todos los tiempos. Una oportunidad de
+								crecer y adquirir múltiples técnicas y herramientas con las que
+								avanzar en tu proceso de Autoconocimiento y Realización y,
+								además, convertirte en instructor/a de meditación. <br />
+								<br />
+								Inscríbete ahora y prepárate para enseñar a otr@s el bello arte
+								de la meditación.
 							</div>
 							<div className="buttons">
 								<TransitionLink href="/diplomado-meditacion" label="Leer Más" />
@@ -111,8 +117,9 @@ export default function CourseSection() {
 									Inscríbete
 								</Link>
 							</div>
-							<div className="des mt-[20px]">
-								Inscripciones hasta el 18 de septiembre.
+							<div className="gSansMedium text-[17px] 2xl:text-[16px] text-[var(--zen-white)] mt-[12px] w-[400px] xl:w-[650px]">
+								Inscripciones abiertas hasta el 18 de septiembre. <br />
+								Preinscripción con descuento hasta el 19 de agosto.
 							</div>
 						</div>
 					</div>
@@ -125,17 +132,27 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Chen Tuan Li</div>
-							<div className="title">FORMACIÓN EN</div>
-							<div className="topic">CHING I</div>
+							<div className="title">
+								FORMACIÓN EN<span className="topic"> CHING I</span>
+							</div>
+
 							<div className="des">
-								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
-								nisi est aliqua excepteur enim voluptate occaecat ut consequat
-								nisi. Veniam exercitation irure ullamco ullamco aute aliquip
-								nostrud velit et minim. Sit voluptate deserunt consectetur
-								eiusmod aute incididunt deserunt excepteur elit culpa tempor
-								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
-								culpa sint deserunt irure sit anim dolore.
+								La tradición Fang Shi es un linaje ancestral que surge en las
+								primeras escuelas del Yin-Yang. Estas escuelas fueron las que
+								crearon lo que actualmente conocemos como I Ching. Para este
+								linaje, esta disciplina universal es una vía de
+								autoconocimiento, autosuperación y crecimiento espiritual. Un
+								noble arte con el que acercarse a una experiencia mística de
+								conexión con la Unidad. <br />
+								<br /> Aquí tienes la oportunidad de acceder a la primera
+								formación online perteneciente a este milenario linaje. Un viaje
+								de autodescubrimiento, pero también, una oportunidad de aprender
+								una metodología atávica con la que guiar y llevar Luz al Camino
+								de otr@s.
+								<br />
+								<br />
+								Inscríbete y adéntrate en esta fascinante experiencia de
+								transformación que hará cambiar todo tu universo.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/formacion-ching-i" className="button">
@@ -152,7 +169,9 @@ export default function CourseSection() {
 								</Link>
 							</div> */}
 							<div className="prox">
-								<h2>Próximamente</h2>
+								<h2>
+									Inicio octubre 2024. Inscripciones desde septiembre 2024.
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -165,17 +184,30 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Chen Tuan Li</div>
 							<div className="title">Formación en Realización Espiritual</div>
 							<div className="topic">El Gran Viaje del Pez Koi</div>
 							<div className="des">
-								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
-								nisi est aliqua excepteur enim voluptate occaecat ut consequat
-								nisi. Veniam exercitation irure ullamco ullamco aute aliquip
-								nostrud velit et minim. Sit voluptate deserunt consectetur
-								eiusmod aute incididunt deserunt excepteur elit culpa tempor
-								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
-								culpa sint deserunt irure sit anim dolore.
+								Hay dos maneras de entender y vivir la vida; una de ellas te
+								lleva a una vida ordinaria con más o menos éxito y prosperidad,
+								una vida que terminará con tu última exhalación. La otra, es una
+								vida que requiere coherencia, impecabilidad y una chispa de
+								magia y fantasía. Esta, te ofrece ir más allá de quien crees que
+								eres, y te abre la posibilidad de acceder al otro lado del
+								espejo para ver una realidad nunca antes soñada. La primera
+								opción será disfrutada o aborrecida por tu yo egóico, por esa
+								estructura de personalidad que definió tu familia, la sociedad y
+								la cultura de la época en la que nos encontramos, y por todos y
+								cada uno de los condicionamientos externos que ahora habitan en
+								tu interior. <br />
+								<br />
+								Para la segunda opción, aquí tienes una formación creada y
+								diseñada para encontrar la verdadera Libertad, más allá del
+								engaño o la falsedad de las ideas, de tu propio cuerpo de
+								conducta y de todas las directrices y estereotipos proyectados
+								sobre tu auténtica naturaleza. Si eres de los que sienten que
+								este mundo y esta vida es algo más de todo aquello que ves y
+								escuchas, no dejes pasar la oportunidad de formar parte del Gran
+								Viaje.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/formacion-ching-i" className="button">
@@ -192,7 +224,7 @@ export default function CourseSection() {
 								</Link>
 							</div> */}
 							<div className="prox">
-								<h2>Próximamente</h2>
+								<h2>Inicio febrero 2025. Inscripciones desde enero 2024.</h2>
 							</div>
 						</div>
 					</div>
@@ -205,17 +237,25 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Chen Tuan Li</div>
-							<div className="title">DIPLOMADO EN</div>
-							<div className="topic">SONOTERAPIA</div>
+							<div className="title">
+								DIPLOMADO EN<span className="topic"> SONOTERAPIA</span>
+							</div>
+
 							<div className="des">
-								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
-								nisi est aliqua excepteur enim voluptate occaecat ut consequat
-								nisi. Veniam exercitation irure ullamco ullamco aute aliquip
-								nostrud velit et minim. Sit voluptate deserunt consectetur
-								eiusmod aute incididunt deserunt excepteur elit culpa tempor
-								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
-								culpa sint deserunt irure sit anim dolore.
+								Cuando algo vive dentro de ti, no hay otra opción que
+								expresarlo. Y para ello, los humanos hemos utilizado el sonido y
+								la música desde hace miles de años para comunicar sentimientos y
+								emociones, compartir sueños y hacer más cercano nuestro mundo
+								interno con aquellos que escuchan el susurro del espíritu de
+								aquel que hace cantar los instrumentos. <br />
+								<br />
+								Aquí tienes una formación con la que desarrollar tu
+								sensibilidad, tu escucha y silencio interior. Un diplomado con
+								el que adquirirás herramientas y técnicas teórico-prácticas con
+								las que realizar sesiones individuales y grupales de Healing
+								Sounds. Una forma sublime de mejorar y sanar la vida de otr@s y
+								contribuir, al mismo tiempo, a la elevación vibracional del
+								planeta.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/diplomado-sonoterapia" className="button">
@@ -232,7 +272,7 @@ export default function CourseSection() {
 								</Link>
 							</div> */}
 							<div className="prox">
-								<h2>Próximamente</h2>
+								<h2>Inicio enero 2025. Inscripciones desde noviembre 2024.</h2>
 							</div>
 						</div>
 					</div>
@@ -245,19 +285,28 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="author">Chen Tuan Li</div>
 							<div className="title sanacion">
 								Maestría en Sanación Espiritual
 							</div>
 							<div className="topic sanacion">La Luz del Cambio</div>
 							<div className="des">
-								Adipisicing pariatur amet consectetur ipsum ea. Magna incididunt
-								nisi est aliqua excepteur enim voluptate occaecat ut consequat
-								nisi. Veniam exercitation irure ullamco ullamco aute aliquip
-								nostrud velit et minim. Sit voluptate deserunt consectetur
-								eiusmod aute incididunt deserunt excepteur elit culpa tempor
-								consectetur ut. Aliquip non dolor et sit excepteur ut dolor
-								culpa sint deserunt irure sit anim dolore.
+								Todos los seres humanos llegamos a este planeta con habilidades
+								y capacidades vinculadas a la parasicología y lo paranormal. La
+								sanación energética y espiritual a través de la imposición de
+								manos se ha desarrollado desde los inicios de todas las culturas
+								y, aunque algunos reniegan de su veracidad, todos los días
+								aparecen nuevos casos de sanación espontánea que muestran lo
+								mágico y milagroso que es el ser humano.
+								<br />
+								<br /> Aquí te ofrecemos una formación rigurosa con la que
+								aprender y dominar técnicas y prácticas de las tradiciones
+								espirituales del lejano oriente. En ella, obtendrás varias
+								maestrías y diplomas que acreditarán tus conocimientos y tus
+								capacidades, tanto para sanar a otr@s como para guiar sus
+								procesos de evolución espiritual. Un equilibrio entre lo teórico
+								y práctico que te llevará a un avance en tu propio proceso y que
+								te otorgará lo necesario para desarrollarte como sanador/a
+								espiritual.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/maestria-sanacion-espiritual" className="button">
@@ -274,7 +323,7 @@ export default function CourseSection() {
 								</Link>
 							</div> */}
 							<div className="prox">
-								<h2>Próximamente</h2>
+								<h2>Inicio 2025.</h2>
 							</div>
 						</div>
 					</div>
@@ -335,7 +384,7 @@ export default function CourseSection() {
 					</div>
 					<div className="item">
 						<Image
-							src="/Assets/meditacion.avif"
+							src="/Assets/diplomado-meditacion.avif"
 							alt="back"
 							width={1024}
 							height={1024}
