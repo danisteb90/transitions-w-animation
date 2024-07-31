@@ -28,15 +28,15 @@ const IntroAnimation = () => {
 		requestAnimationFrame(raf);
 	});
 
-	// useEffect(() => {
-	// 	const timer = setTimeout(() => {
-	// 		document
-	// 			.getElementById("courses-container")
-	// 			.scrollIntoView({ behavior: "smooth" });
-	// 	}, 10000);
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			document
+				.getElementById("courses-container")
+				.scrollIntoView({ behavior: "smooth" });
+		}, 10000);
 
-	// 	return () => clearTimeout(timer);
-	// }, []);
+		return () => clearTimeout(timer);
+	}, []);
 
 	useEffect(() => {
 		const tl = gsap.timeline();
