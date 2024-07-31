@@ -878,7 +878,7 @@ body {
   position: absolute;
   width: auto;
   height: auto;
-  padding: 10px;
+  padding: 6px;
   top: 5px;
   left: 50%;
   border-radius: 10px;
@@ -915,17 +915,17 @@ body {
 .nav-link {
   display: inline-block;
   padding: 10px 25px;
-  color: var(--zen-lightorange);
+  color: var(--zen-analog2);
   text-decoration: none;
   font-family: "GeneralSans-Medium", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   transition: var(--transition-menu1);
 }
 
 .nav-link:hover {
-  color: var(--zen-lightorange);
+  color: var(--zen-analog2);
 }
 
 .nav-li.active .nav-link {
-  color: var(--zen-analog2);
+  color: var(--zen-lightorange);
 }
