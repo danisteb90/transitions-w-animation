@@ -34,8 +34,8 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="absolute bottom-0 left-0 w-full h-[50px] text-[var(--zen-white)] text-sm">
-					<p className="pt-3 pl-3">
-						© 2024 Diseño web Integra Creative Agency Textos Chen Tuan Li 2024
+					<p className="pt-3 pl-3 italic">
+						Diseño Web, Integra Creative Agency. Textos, Chen Tuan Li. © 2024
 						Todos los derechos reservados.
 					</p>
 				</div>

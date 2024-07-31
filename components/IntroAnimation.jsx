@@ -28,15 +28,15 @@ const IntroAnimation = () => {
 		requestAnimationFrame(raf);
 	});
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			document
-				.getElementById("courses-container")
-				.scrollIntoView({ behavior: "smooth" });
-		}, 10000);
+	// useEffect(() => {
+	// 	const timer = setTimeout(() => {
+	// 		document
+	// 			.getElementById("courses-container")
+	// 			.scrollIntoView({ behavior: "smooth" });
+	// 	}, 10000);
 
-		return () => clearTimeout(timer);
-	}, []);
+	// 	return () => clearTimeout(timer);
+	// }, []);
 
 	useEffect(() => {
 		const tl = gsap.timeline();
@@ -98,7 +98,10 @@ const IntroAnimation = () => {
 	return (
 		<>
 			<div className="main-container w-full h-screen bg-gradient-to-r from-[var(--zen-base)] to-neutral-300 gSans fixed top-0 left-0 z-[4]"></div>
-			<div className="hero-container w-full h-screen relative bg-[var(--zen-comp)]">
+			<div
+				id="hero-container"
+				className="hero-container w-full h-screen relative bg-[var(--zen-comp)]"
+			>
 				<div className="slogan absolute z-[4] top-[69%] left-[5%] translate-y-[-50%] 2xl:text-[140px] xl:text-[100px] text-[40px] gSansLight font-bold text-[var(--zen-skyblue)] mix-blend-color-dodge leading-tight">
 					<p className="first-text opacity-0">Tu Yo</p>
 					<p className="first-text opacity-0">
@@ -134,10 +137,13 @@ const IntroAnimation = () => {
 			<div id="courses-container" className="courses-container w-full h-screen">
 				<CourseSection />
 			</div>
-			<div className="w-full h-screen">
+			<div id="pilares-container" className="w-full h-screen">
 				<DynamicBentoBoxes />
 			</div>
-			<div className="w-full h-[250px] bg-[var(--zen-pilaresanim)]">
+			<div
+				id="footer-container"
+				className="w-full h-[250px] bg-[var(--zen-pilaresanim)]"
+			>
 				<FooterMarquee />
 				<Footer />
 			</div>
