@@ -21,7 +21,7 @@ const InfoSection5 = () => {
 
 	const formacionCheng = [
 		{
-			title: "Formación",
+			title: "Entre sus formaciones: ",
 			lessons: [
 				"Profesor en Meditación y Yoga Supramental por International Yoga Federation I.Y.F.",
 				"Instructor en Meditación y Terapeuta en Medicina Tibetana por Thubten Dhargye Ling.",
@@ -106,16 +106,13 @@ const InfoSection5 = () => {
 								alt="instructor-firma"
 								width={500}
 								height={500}
-								className="object-cover w-[70%]"
+								className="object-cover w-[70%] ml-[-10px]"
 							/>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="w-[90%] h-full flex flex-col items-start justify-start ml-[120px]">
-				<h3 className="w-full text-center gSansMedium text-[26px] font-bold mb-[30px]">
-					Entre sus formaciones:
-				</h3>
+			<div className="xl:w-[90%] w-full h-full flex flex-col items-start justify-start xl:ml-[120px] ml-0">
 				{formacionCheng.map((data, index) => {
 					return (
 						<AccordeonItem
