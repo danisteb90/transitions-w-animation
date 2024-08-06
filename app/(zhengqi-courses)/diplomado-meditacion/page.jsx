@@ -1,4 +1,3 @@
-import TransitionLink from "@/components/TransitionLink";
 import { Great_Vibes } from "next/font/google";
 import LeftMenu from "./_components/LeftMenu";
 import ContactButton from "./_components/ContactButton";
