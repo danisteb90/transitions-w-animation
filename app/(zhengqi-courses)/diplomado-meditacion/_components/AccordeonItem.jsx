@@ -20,10 +20,10 @@ const AccordeonItem = ({ open, toggle, title, lessons }) => {
 				</div>
 			</div>
 			<Collapse isOpened={open}>
-				<ul className="w-full px-[50px] ">
+				<ul className="w-full px-[50px]">
 					{lessons.map((lesson, index) => (
 						<li
-							className="2xl:text-[21px] xl:text-[16px] text-[14px] list-disc"
+							className="2xl:text-[21px] xl:text-[16px] text-[14px] list-disc leading-relaxed"
 							key={index}
 						>
 							{lesson}

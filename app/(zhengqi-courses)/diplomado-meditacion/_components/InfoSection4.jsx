@@ -97,7 +97,7 @@ const InfoSection4 = () => {
 				¿Qué vas a aprender en este Diplomado en Meditación?
 			</h2>
 			<div className="w-full h-full flex xl:flex-row flex-col justify-center items-center">
-				<div className="w-full h-full flex flex-col items-center justify-center flex-1 xl:border-r-2 border-b-2 xl:border-r-[var(--zen-analog)] border-b-[var(--zen-analog)] mb-[20px]">
+				<div className="w-full h-full flex flex-col items-center justify-center flex-1 xl:border-r-2 xl:border-b-0 border-b-2 xl:border-r-[var(--zen-analog)] border-b-[var(--zen-analog)] mb-[20px]">
 					<h3 className="w-full text-center gSansMedium text-[26px] font-bold mb-[30px]">
 						Programa Meditación
 					</h3>
@@ -113,7 +113,7 @@ const InfoSection4 = () => {
 						);
 					})}
 				</div>
-				<div className="w-full h-full flex flex-col items-center justify-center flex-1">
+				<div className="w-full h-full flex flex-col items-center justify-start flex-1">
 					<h3 className="w-full text-center gSansMedium text-[26px] font-bold mb-[30px]">
 						Programa Autocuidado Consciente
 					</h3>
