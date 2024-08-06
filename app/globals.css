@@ -523,6 +523,10 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+  .main-course-container {
+    height: 960px;
+  }
+
   .arrows {
     left: 10%;
     bottom: -8%;

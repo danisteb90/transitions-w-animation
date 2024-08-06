@@ -153,7 +153,10 @@ const IntroAnimation = () => {
 					</video>
 				</div>
 			</div>
-			<div id="courses-container" className="courses-container w-full h-screen">
+			<div
+				id="courses-container"
+				className="courses-container w-full xl:h-screen h-auto"
+			>
 				<CourseSection />
 			</div>
 			<div id="pilares-container" className="w-full h-screen">
