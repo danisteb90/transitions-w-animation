@@ -3,7 +3,7 @@ import { BsArrowDown } from "react-icons/bs";
 
 const ArrowDown = () => {
 	return (
-		<div className="fixed right-[20px] bottom-[20px] bg-[var(--zen-base)] w-[50px] h-[50px] rounded-full xl:flex items-center justify-center hidden hover:rotate-90 transition-all duration-500 ease-in-out">
+		<div className="fixed right-[20px] xl:bottom-[20px] bottom-[120px] bg-[var(--zen-base)] w-[50px] h-[50px] rounded-full flex items-center justify-center hover:rotate-90 transition-all duration-500 ease-in-out z-[2]">
 			<TransitionLink
 				href="/#courses-container"
 				label=""

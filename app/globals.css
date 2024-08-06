@@ -1034,3 +1034,9 @@ body {
 .nav-li.active .nav-icon {
   color: var(--zen-analog2);
 }
+
+/*Accordeon*/
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
