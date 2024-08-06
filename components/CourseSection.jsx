@@ -65,10 +65,10 @@ export default function CourseSection() {
 				carouselDom.classList.remove("prev");
 			}, timeRunning);
 
-			clearTimeout(runAutoNext);
-			runAutoNext = setTimeout(() => {
-				nextDom.click();
-			}, timeAutoNext);
+			// clearTimeout(runAutoNext);
+			// runAutoNext = setTimeout(() => {
+			// 	nextDom.click();
+			// }, timeAutoNext);
 		};
 	});
 
@@ -109,7 +109,11 @@ export default function CourseSection() {
 								de la meditación.
 							</div>
 							<div className="buttons">
-								<TransitionLink href="/diplomado-meditacion" label="Leer Más" />
+								<TransitionLink
+									href="/diplomado-meditacion"
+									label="Leer Más"
+									background="bg-[#00000099]"
+								/>
 								<Link
 									href="https://drive.google.com/uc?export=download&id=1J-GWcqlYJco0o2W0CYoGqvh0k125Mjda"
 									className="button"
@@ -120,7 +124,7 @@ export default function CourseSection() {
 									Inscríbete
 								</Link>
 							</div>
-							<div className="gSansMedium text-[17px] 2xl:text-[16px] text-[var(--zen-white)] 2xl:mt-0 mt-[12px] w-[400px] xl:w-[650px]">
+							<div className="gSansMedium text-[12px] xl:text-[16px] text-[var(--zen-white)] 2xl:mt-0 mt-[12px] w-[400px] xl:w-[650px]">
 								Inscripciones abiertas hasta el 18 de septiembre.
 							</div>
 						</div>

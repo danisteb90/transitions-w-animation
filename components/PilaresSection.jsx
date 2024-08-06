@@ -11,6 +11,7 @@ const PilaresSection = () => {
 	const [activeModal, setActiveModal] = useState(null);
 
 	useEffect(() => {
+		const mediaQuery = window.matchMedia("(min-width: 1270px)");
 		const bento = document.getElementById("bento"),
 			bentoBoxes = bento.querySelectorAll(".bento_box"),
 			bentoBoxesSpan = bento.querySelectorAll(".bento_box_text > span"),
@@ -143,24 +144,46 @@ const PilaresSection = () => {
 				box.addEventListener("click", () => {
 					setActiveModal(`.bento_modal${index + 1}`);
 					const modal = document.querySelector(`.bento_modal${index + 1}`);
-					if (modal) {
-						modal.classList.add("active");
-						tlModal
-							.to(".box_modal_image", {
-								width: "50%",
-								duration: 1,
-								delay: 0.5,
-								ease: "power4.inOut",
-							})
-							.to(
-								".bento_modal_content",
-								{
-									opacity: 1,
-									duration: 0.5,
+					if (mediaQuery.matches) {
+						if (modal) {
+							modal.classList.add("active");
+							tlModal
+								.to(".box_modal_image", {
+									width: "50%",
+									duration: 1,
+									delay: 0.5,
 									ease: "power4.inOut",
-								},
-								"-=0.5"
-							);
+								})
+								.to(
+									".bento_modal_content",
+									{
+										opacity: 1,
+										duration: 0.5,
+										ease: "power4.inOut",
+									},
+									"-=0.5"
+								);
+						}
+					} else {
+						if (modal) {
+							modal.classList.add("active");
+							tlModal
+								.to(".box_modal_image", {
+									height: "50%",
+									duration: 1,
+									delay: 0.5,
+									ease: "power4.inOut",
+								})
+								.to(
+									".bento_modal_content",
+									{
+										opacity: 1,
+										duration: 0.5,
+										ease: "power4.inOut",
+									},
+									"-=0.5"
+								);
+						}
 					}
 				});
 			});
@@ -171,15 +194,27 @@ const PilaresSection = () => {
 					setActiveModal(null);
 					const modal = close.parentElement;
 					modal.classList.remove("active");
-					tlModal
-						.to(".box_modal_image", {
-							width: "100%",
-							duration: 0.2,
-						})
-						.to(".bento_modal_content", {
-							opacity: 0,
-							duration: 0.5,
-						});
+					if (mediaQuery.matches) {
+						tlModal
+							.to(".box_modal_image", {
+								width: "100%",
+								duration: 0.2,
+							})
+							.to(".bento_modal_content", {
+								opacity: 0,
+								duration: 0.5,
+							});
+					} else {
+						tlModal
+							.to(".box_modal_image", {
+								height: "100%",
+								duration: 0.2,
+							})
+							.to(".bento_modal_content", {
+								opacity: 0,
+								duration: 0.5,
+							});
+					}
 				});
 			});
 		};

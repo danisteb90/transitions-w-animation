@@ -138,9 +138,9 @@ const IntroAnimation = () => {
 							alt="logo"
 							width={300}
 							height={400}
-							className="logo 2xl:w-[250px] md:w-[280px] w-[120px] opacity-0"
+							className="logo xl:w-[290px] w-[160px] opacity-0"
 						/>
-						<p className="third-text 2xl:w-[850px] w-[360px] 2xl:text-[38px] text-[34px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
+						<p className="third-text xl:w-[850px] w-[360px] xl:text-[38px] text-[26px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
 							La primera Escuela de realización espiritual, basada en los ocho
 							pilares de transformación existencial descritos por las Escuelas
 							Ancestrales del Yin-Yang.
