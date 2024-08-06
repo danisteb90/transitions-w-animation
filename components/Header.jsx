@@ -4,35 +4,7 @@ import { useEffect } from "react";
 const Header = () => {
 	useEffect(() => {
 		function moveMenu() {
-			const menuBubble = document.querySelector(".menu-bubble");
 			const navItems = document.querySelectorAll(".nav-li");
-
-			function moveMenuBubble() {
-				const activeItem = document.querySelector(".nav-li.active");
-				if (activeItem) {
-					const rect = activeItem.getBoundingClientRect();
-					const navUlRect = activeItem.parentElement.getBoundingClientRect();
-					menuBubble.style.left = rect.left - navUlRect.left + "px";
-					menuBubble.style.width = rect.width + "px";
-					menuBubble.style.opacity = "1";
-				} else {
-					menuBubble.style.opacity = "0";
-				}
-			}
-
-			const observer = new MutationObserver((mutations) => {
-				mutations.forEach((mutation) => {
-					if (mutation.attributeName === "class") {
-						moveMenuBubble();
-					}
-				});
-			});
-
-			navItems.forEach((item) => {
-				observer.observe(item, {
-					attributes: true,
-				});
-			});
 
 			navItems.forEach((item) => {
 				item.addEventListener("click", () => {
@@ -40,10 +12,7 @@ const Header = () => {
 					item.classList.add("active");
 				});
 			});
-
-			moveMenuBubble();
 		}
-
 		moveMenu();
 	}, []);
 	// Smooth Scroll
@@ -59,7 +28,6 @@ const Header = () => {
 			<div className="nav">
 				<div className="nav-menu">
 					<ul className="nav-ul">
-						<div className="menu-bubble"></div>
 						<li className="nav-li">
 							<a
 								href="#hero-container"
@@ -75,7 +43,7 @@ const Header = () => {
 								className="nav-link"
 								onClick={(e) => handleNavigation(e, "courses-container")}
 							>
-								Cursos y Formaciones
+								Formaciones y Talleres
 							</a>
 						</li>
 						<li className="nav-li">
@@ -84,7 +52,7 @@ const Header = () => {
 								className="nav-link"
 								onClick={(e) => handleNavigation(e, "pilares-container")}
 							>
-								Pilares
+								La Escuela
 							</a>
 						</li>
 						<li className="nav-li">
@@ -93,7 +61,7 @@ const Header = () => {
 								className="nav-link"
 								onClick={(e) => handleNavigation(e, "footer-container")}
 							>
-								Contácto
+								Contáctanos
 							</a>
 						</li>
 					</ul>

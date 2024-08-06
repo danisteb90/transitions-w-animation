@@ -21,12 +21,12 @@ export default function CourseSection() {
 		};
 
 		//Cuenta para habilitar las flechas y ocultar la propiedad CSS "next"
-		let timeRunning = 2200;
+		let timeRunning = 1200;
 		let runTimeOut;
 
 		//Cuenta para movimiento automatico
-		// let timeAutoNext = 10000;
-		// let runAutoNext;
+		let timeAutoNext = 10000;
+		let runAutoNext;
 		// let runAutoNext = setTimeout(() => {
 		// 	nextDom.click();
 		// }, timeAutoNext);
@@ -65,10 +65,10 @@ export default function CourseSection() {
 				carouselDom.classList.remove("prev");
 			}, timeRunning);
 
-			// clearTimeout(runAutoNext);
-			// runAutoNext = setTimeout(() => {
-			// 	nextDom.click();
-			// }, timeAutoNext);
+			clearTimeout(runAutoNext);
+			runAutoNext = setTimeout(() => {
+				nextDom.click();
+			}, timeAutoNext);
 		};
 	});
 
@@ -87,20 +87,23 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">
-								DIPLOMADO EN<span className="topic"> MEDITACIÓN</span>
-							</div>
+							<div className="title">DIPLOMADO EN MEDITACIÓN</div>
+							<div className="topic">El Camino Hacia Tu Automaestría</div>
 
 							<div className="des">
-								Tu tiempo es limitado, así que no lo malgastes viviendo la vida
-								de alguien distinto de quien realmente eres. Aprende a vaciarte,
-								y la Plenitud de la existencia colmará tu Ser. Para ello, te
-								ofrecemos el primer Diplomado en Meditación basado en las ocho
-								fases de una experiencia cúlmine descritas por los grandes
-								sabios y avatares de todos los tiempos. Una oportunidad de
-								crecer y adquirir múltiples técnicas y herramientas con las que
-								avanzar en tu proceso de Autoconocimiento y Realización y,
-								además, convertirte en instructor/a de meditación. <br />
+								Tu tiempo es limitado, no lo malgastes viviendo la vida de
+								alguien distinto de quien realmente eres.
+								<br />
+								<br />
+								Aprende a vaciarte y la Plenitud de la existencia colmará tu
+								Ser. Para ello, te ofrecemos el primer Diplomado en Meditación
+								basado en las ocho fases de una experiencia cúlmine descritas
+								por los grandes sabios y avatares de todos los tiempos. Una
+								oportunidad de crecer y avanzar en tu proceso de
+								Autoconocimiento y Realización, y de adquirir múltiples técnicas
+								y herramientas con las que convertirte en Instructor/a de
+								Meditación.
+								<br />
 								<br />
 								Inscríbete ahora y prepárate para enseñar a otr@s el bello arte
 								de la meditación.
@@ -117,9 +120,8 @@ export default function CourseSection() {
 									Inscríbete
 								</Link>
 							</div>
-							<div className="gSansMedium text-[17px] 2xl:text-[16px] text-[var(--zen-white)] mt-[12px] w-[400px] xl:w-[650px]">
-								Inscripciones abiertas hasta el 18 de septiembre. <br />
-								Preinscripción con descuento hasta el 19 de agosto.
+							<div className="gSansMedium text-[17px] 2xl:text-[16px] text-[var(--zen-white)] 2xl:mt-0 mt-[12px] w-[400px] xl:w-[650px]">
+								Inscripciones abiertas hasta el 18 de septiembre.
 							</div>
 						</div>
 					</div>
@@ -132,27 +134,26 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">
-								FORMACIÓN EN<span className="topic"> CHING I</span>
-							</div>
+							<div className="title">FORMACIÓN EN I CHING</div>
+							<div className="topic">El Poder Del Clarividente</div>
 
 							<div className="des">
 								La tradición Fang Shi es un linaje ancestral que surge en las
-								primeras escuelas del Yin-Yang. Estas escuelas fueron las que
-								crearon lo que actualmente conocemos como I Ching. Para este
-								linaje, esta disciplina universal es una vía de
+								primeras Escuelas del Yin-Yang, quienes crearon lo que
+								actualmente conocemos como I Ching.
+								<br />
+								<br />
+								Para este linaje, esta disciplina universal es una vía de
 								autoconocimiento, autosuperación y crecimiento espiritual. Un
 								noble arte con el que acercarse a una experiencia mística de
-								conexión con la Unidad. <br />
-								<br /> Aquí tienes la oportunidad de acceder a la primera
-								formación online perteneciente a este milenario linaje. Un viaje
-								de autodescubrimiento, pero también, una oportunidad de aprender
-								una metodología atávica con la que guiar y llevar Luz al Camino
-								de otr@s.
+								conexión con la Unidad. Aquí te presentamos la primera Formación
+								en línea perteneciente a este milenario linaje. Un viaje de
+								autodescubrimiento y la oportunidad de aprender una metodología
+								atávica con la que guiar y llevar Luz al Camino de otr@s.
 								<br />
 								<br />
 								Inscríbete y adéntrate en esta fascinante experiencia de
-								transformación que hará cambiar todo tu universo.
+								transformación que cambiará todo tu universo.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/formacion-ching-i" className="button">
@@ -170,7 +171,8 @@ export default function CourseSection() {
 							</div> */}
 							<div className="prox">
 								<h2>
-									Inicio octubre 2024. Inscripciones desde septiembre 2024.
+									Inicio en octubre de 2024. Inscripciones desde septiembre de
+									2024.
 								</h2>
 							</div>
 						</div>
@@ -184,30 +186,25 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">Formación en Realización Espiritual</div>
-							<div className="topic">El Gran Viaje del Pez Koi</div>
+							<div className="title">FORMACIÓN EN REALIZACIÓN ESPIRITUAL</div>
+							<div className="topic">El Gran Viaje</div>
 							<div className="des">
-								Hay dos maneras de entender y vivir la vida; una de ellas te
+								Hay dos maneras de entender y vivir la vida. Una de ellas te
 								lleva a una vida ordinaria con más o menos éxito y prosperidad,
-								una vida que terminará con tu última exhalación. La otra, es una
-								vida que requiere coherencia, impecabilidad y una chispa de
-								magia y fantasía. Esta, te ofrece ir más allá de quien crees que
-								eres, y te abre la posibilidad de acceder al otro lado del
-								espejo para ver una realidad nunca antes soñada. La primera
-								opción será disfrutada o aborrecida por tu yo egóico, por esa
-								estructura de personalidad que definió tu familia, la sociedad y
-								la cultura de la época en la que nos encontramos, y por todos y
-								cada uno de los condicionamientos externos que ahora habitan en
-								tu interior. <br />
+								una vida que terminará con tu última exhalación. Y, la Otra, es
+								una vida que requiere coherencia, impecabilidad y una chispa de
+								magia y fantasía. Ésta te ofrece ir más allá de quien crees y te
+								abre la posibilidad de acceder al otro lado del espejo para ver
+								una realidad nunca antes soñada.
 								<br />
-								Para la segunda opción, aquí tienes una formación creada y
-								diseñada para encontrar la verdadera Libertad, más allá del
-								engaño o la falsedad de las ideas, de tu propio cuerpo de
-								conducta y de todas las directrices y estereotipos proyectados
-								sobre tu auténtica naturaleza. Si eres de los que sienten que
-								este mundo y esta vida es algo más de todo aquello que ves y
-								escuchas, no dejes pasar la oportunidad de formar parte del Gran
-								Viaje.
+								<br />
+								Aquí tienes una formación creada y diseñada para encontrar la
+								verdadera Libertad, más allá del engaño o la falsedad de las
+								ideas, de tu propio cuerpo de conducta y de todas las
+								directrices y estereotipos proyectados sobre tu auténtica
+								naturaleza. Si eres de los que sienten que este mundo y esta
+								vida es algo más de todo aquello que ves y escuchas, no dejes
+								pasar la oportunidad de formar parte del Gran Viaje.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/formacion-ching-i" className="button">
@@ -224,7 +221,9 @@ export default function CourseSection() {
 								</Link>
 							</div> */}
 							<div className="prox">
-								<h2>Inicio febrero 2025. Inscripciones desde enero 2024.</h2>
+								<h2>
+									Inicio en febrero de 2025. Inscripciones desde enero de 2024.
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -237,23 +236,25 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">
-								DIPLOMADO EN<span className="topic"> SONOTERAPIA</span>
-							</div>
+							<div className="title">DIPLOMADO EN SONOTERAPIA</div>
+							<div className="topic">La Voz Del Espíritu</div>
 
 							<div className="des">
 								Cuando algo vive dentro de ti, no hay otra opción que
-								expresarlo. Y para ello, los humanos hemos utilizado el sonido y
-								la música desde hace miles de años para comunicar sentimientos y
-								emociones, compartir sueños y hacer más cercano nuestro mundo
-								interno con aquellos que escuchan el susurro del espíritu de
-								aquel que hace cantar los instrumentos. <br />
+								expresarlo.
 								<br />
-								Aquí tienes una formación con la que desarrollar tu
-								sensibilidad, tu escucha y silencio interior. Un diplomado con
-								el que adquirirás herramientas y técnicas teórico-prácticas con
-								las que realizar sesiones individuales y grupales de Healing
-								Sounds. Una forma sublime de mejorar y sanar la vida de otr@s y
+								<br />
+								Desde hace miles de años, los humanos hemos utilizado el sonido
+								y la música para comunicar sentimientos y emociones, compartir
+								sueños, y hacer más cercano nuestro mundo interno con aquellos
+								que escuchan el susurro del espíritu de aquel que hace cantar
+								los instrumentos. Aquí tienes un Diplomado para desarrollar tu
+								sensibilidad, tu escucha y silencio interior; y, adquirir las
+								herramientas y técnicas teórico-prácticas con las que realizar
+								sesiones individuales y grupales de Healing Sounds.
+								<br />
+								<br />
+								Una forma sublime de mejorar y sanar la vida de otr@s y
 								contribuir, al mismo tiempo, a la elevación vibracional del
 								planeta.
 							</div>
@@ -286,27 +287,27 @@ export default function CourseSection() {
 						/>
 						<div className="content">
 							<div className="title sanacion">
-								Maestría en Sanación Espiritual
+								MAESTRÍA EN SANACIÓN ESPIRITUAL
 							</div>
 							<div className="topic sanacion">La Luz del Cambio</div>
 							<div className="des">
 								Todos los seres humanos llegamos a este planeta con habilidades
-								y capacidades vinculadas a la parasicología y lo paranormal. La
-								sanación energética y espiritual a través de la imposición de
-								manos se ha desarrollado desde los inicios de todas las culturas
-								y, aunque algunos reniegan de su veracidad, todos los días
-								aparecen nuevos casos de sanación espontánea que muestran lo
-								mágico y milagroso que es el ser humano.
+								y capacidades vinculadas a la parapsicología y lo paranormal.
 								<br />
-								<br /> Aquí te ofrecemos una formación rigurosa con la que
-								aprender y dominar técnicas y prácticas de las tradiciones
-								espirituales del lejano oriente. En ella, obtendrás varias
-								maestrías y diplomas que acreditarán tus conocimientos y tus
-								capacidades, tanto para sanar a otr@s como para guiar sus
-								procesos de evolución espiritual. Un equilibrio entre lo teórico
-								y práctico que te llevará a un avance en tu propio proceso y que
-								te otorgará lo necesario para desarrollarte como sanador/a
-								espiritual.
+								<br />
+								Aunque algunos reniegan de la veracidad de la sanación
+								energética y espiritual a través de la imposición de manos,
+								todos los días aparecen nuevos casos de sanación espontánea que
+								muestran lo mágico y milagroso que es el ser humano.
+								<br />
+								<br />
+								Aquí te ofrecemos una Formación rigurosa con la que aprender y
+								dominar técnicas y prácticas de las tradiciones espirituales del
+								lejano oriente. En ella, obtendrás varias maestrías y diplomas
+								que acreditarán tus conocimientos y tus capacidades, tanto para
+								sanar a otr@s como para guiar sus procesos de evolución
+								espiritual. Y, de esta manera, desarrollarte como Sanador/a
+								Espiritual.
 							</div>
 							{/* <div className="buttons">
 								<Link href="/maestria-sanacion-espiritual" className="button">
@@ -323,7 +324,7 @@ export default function CourseSection() {
 								</Link>
 							</div> */}
 							<div className="prox">
-								<h2>Inicio 2025.</h2>
+								<h2>Inicio en 2025.</h2>
 							</div>
 						</div>
 					</div>
@@ -401,7 +402,7 @@ export default function CourseSection() {
 					<button id="prev">{"<"}</button>
 					<button id="next">{">"}</button>
 				</div>
-				<div className="time"></div>
+				{/* <div className="time"></div> */}
 			</div>
 		</main>
 	);

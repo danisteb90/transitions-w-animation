@@ -7,6 +7,7 @@ import Lenis from "lenis";
 import dynamic from "next/dynamic";
 import Footer from "./Footer";
 import FooterMarquee from "./FooterMarquee";
+import Header from "./Header";
 
 const DynamicBentoBoxes = dynamic(() => import("./PilaresSection.jsx"), {
 	ssr: false,
@@ -33,7 +34,7 @@ const IntroAnimation = () => {
 			document
 				.getElementById("courses-container")
 				.scrollIntoView({ behavior: "smooth" });
-		}, 10000);
+		}, 15000);
 
 		return () => clearTimeout(timer);
 	}, []);
@@ -65,12 +66,29 @@ const IntroAnimation = () => {
 				},
 				"-=1.5"
 			);
+			// .to(
+			// 	".first-text",
+			// 	{
+			// 		duration: 0.5,
+			// 		color: "var(--zen-orange)",
+			// 		ease: "power4.inOut",
+			// 	},
+			// 	"<"
+			// )
+			// .to(
+			// 	".second-text",
+			// 	{
+			// 		duration: 0.5,
+			// 		color: "var(--zen-orange)",
+			// 		ease: "power4.inOut",
+			// 	},
+			// 	"<"
+			// );
 		}
 		tl.to(".first-text", {
-			duration: 2,
+			duration: 1.6,
 			opacity: 0,
 			ease: "power4.out",
-			delay: 2,
 		})
 			.to(
 				".second-text",
@@ -97,12 +115,13 @@ const IntroAnimation = () => {
 
 	return (
 		<>
+			<Header />
 			<div className="main-container w-full h-screen bg-gradient-to-r from-[var(--zen-base)] to-neutral-300 gSans fixed top-0 left-0 z-[4]"></div>
 			<div
 				id="hero-container"
 				className="hero-container w-full h-screen relative bg-[var(--zen-comp)]"
 			>
-				<div className="slogan absolute z-[4] top-[69%] left-[5%] translate-y-[-50%] 2xl:text-[140px] xl:text-[100px] text-[40px] gSansLight font-bold text-[var(--zen-skyblue)] mix-blend-color-dodge leading-tight">
+				<div className="slogan absolute z-[4] top-[69%] left-[5%] translate-y-[-50%] 2xl:text-[140px] xl:text-[100px] text-[40px] gSansLight font-bold text-[var(--zen-lightorange)] mix-blend-color-dodge leading-tight">
 					<p className="first-text opacity-0">Tu Yo</p>
 					<p className="first-text opacity-0">
 						Del <span className="gSansMedium">Futuro</span>
@@ -112,8 +131,8 @@ const IntroAnimation = () => {
 						En este <span className="gSansMedium">Presente</span>
 					</p>
 				</div>
-				<div className="gSans absolute z-[3] w-full h-full flex items-center justify-center 2xl:p-[80px] xl:p-[50px] p-[20px]">
-					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[30px] xl:gap-[15px] gap-[10px] bg-[#00000080] backdrop-blur-sm rounded-xl opacity-0">
+				<div className="gSans absolute z-[3] w-full h-full flex items-center justify-center 2xl:p-[120px] xl:p-[50px] p-[20px]">
+					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[30px] xl:gap-[15px] gap-[10px] bg-[#0000009f] backdrop-blur-lg rounded-xl opacity-0">
 						<Image
 							src="/Assets/Logo-Azul-Texto.webp"
 							alt="logo"
@@ -121,7 +140,7 @@ const IntroAnimation = () => {
 							height={400}
 							className="logo 2xl:w-[250px] md:w-[280px] w-[120px] opacity-0"
 						/>
-						<p className="third-text md:w-[650px] w-[360px] 2xl:text-[26px] text-[32px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
+						<p className="third-text 2xl:w-[850px] w-[360px] 2xl:text-[38px] text-[34px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
 							La primera Escuela de realización espiritual, basada en los ocho
 							pilares de transformación existencial descritos por las Escuelas
 							Ancestrales del Yin-Yang.
