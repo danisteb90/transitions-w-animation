@@ -23,7 +23,7 @@ function ModalForm({ onClose }) {
 				}
 				setTimeout(onClose, 500);
 				window.location.href =
-					"https://drive.google.com/uc?export=download&id=1J-GWcqlYJco0o2W0CYoGqvh0k125Mjda";
+					"https://drive.google.com/uc?export=download&id=1irqjdiN1pbgtDfNmdZvTs3hFclS0YyQO";
 			}
 		};
 		xhr.send(new FormData(event.target));

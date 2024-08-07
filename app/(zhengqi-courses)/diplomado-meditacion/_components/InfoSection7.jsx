@@ -11,7 +11,7 @@ const InfoSection7 = () => {
 		<div
 			className={`${lato.className} w-full h-full flex flex-col xl:ml-[75px] ml-0 mt-[-20px]`}
 		>
-			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center ">
+			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
 				¿Listo para Comenzar?
 			</h2>
 			<div className="flex flex-col w-full items-center justify-center">

@@ -48,11 +48,9 @@ const InfoSection6 = () => {
 									Conocí a Chen Tuan Li hace un par de años buscando sobre
 									taoísmo. Me adentré a descubrir lo que su mentoría entrega, y
 									ha sido muy liberador. Respetando los procesos de cada un@
-									pero manteniendo la franqueza y, a la vez, el afecto necesario
-									para un@ poder dar saltos a conocerse-liberarse y poder fluir
-									más livianamente. Es completamente recomendable, desde las
-									prácticas de meditación, los talleres y, sobre todo, los
-									retiros. ¡Se agradece siempre!
+									pero manteniendo la franqueza y, a la vez, el afecto. Es
+									completamente recomendable, desde las prácticas de meditación,
+									los talleres y, sobre todo, los retiros. ¡Se agradece siempre!
 								</p>
 								<div className="absolute right-[20px] bottom-[20px] flex items-center justify-center">
 									<FaQuoteLeft className="text-[var(--zen-pilaresanim)] xl:text-[100px] text-[50px] mr-[10px] opacity-20" />

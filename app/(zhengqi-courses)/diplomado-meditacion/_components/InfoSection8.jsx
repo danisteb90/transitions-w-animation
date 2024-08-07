@@ -101,9 +101,12 @@ const InfoSection8 = () => {
 					Tengo otra pregunta
 				</a>
 			</div>
-			<div className="w-full h-full mt-[80px] mb-[60px] relative">
+			<div className="w-full h-full mt-[100px] mb-[30px] relative">
 				<InfoModal />
 			</div>
+			<h2 className="gSans xl:text-[26px] text-[21px] text-center mb-[30px]">
+				¡Otra Vida es Posible!
+			</h2>
 		</div>
 	);
 };

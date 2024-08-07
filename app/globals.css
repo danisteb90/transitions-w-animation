@@ -1067,6 +1067,10 @@ body {
   width: 100%;
 }
 
+.form-group label {
+  width: 14%;
+}
+
 .form-group input {
   width: 100%;
   padding: 6px;
