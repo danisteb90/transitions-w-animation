@@ -1,10 +1,12 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const Footer = () => {
+const Footer = ({ background = "bg-[var(--zen-pilaresanim)]" }) => {
 	return (
 		<>
-			<section className="relative w-full h-full flex items-start justify-end pt-[50px] bg-[var(--zen-pilaresanim)]">
+			<section
+				className={`relative w-full h-full flex items-start justify-end pt-[50px] ${background}`}
+			>
 				<div className="w-[480px] 2xl:w-[650px] flex flex-col items-start justify-start gap-2">
 					<div className="flex items-center justify-center">
 						<a

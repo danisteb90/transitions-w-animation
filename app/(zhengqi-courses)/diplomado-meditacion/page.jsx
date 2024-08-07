@@ -1,4 +1,3 @@
-import { Great_Vibes } from "next/font/google";
 import LeftMenu from "./_components/LeftMenu";
 import ContactButton from "./_components/ContactButton";
 import ArrowDown from "./_components/ArrowDown";
@@ -9,15 +8,16 @@ import InfoSection3 from "./_components/InfoSection3";
 import InfoSection4 from "./_components/InfoSection4";
 import InfoSection5 from "./_components/InfoSection5";
 import InfoSection6 from "./_components/InfoSection6";
-
-const greatVibes = Great_Vibes({
-	subsets: ["latin"],
-	weight: ["400"],
-});
+import InfoSection7 from "./_components/InfoSection7";
+import InfoSection8 from "./_components/InfoSection8";
+import FooterMarquee from "@/components/FooterMarquee";
+import Footer from "@/components/Footer";
+import InfoModal from "./_components/InfoModal";
 
 const DiplomadoMeditacion = () => {
 	return (
 		<div className="w-full h-screen">
+			<InfoModal />
 			<LeftMenu />
 			<ContactButton text="Contáctanos" />
 			<ArrowDown />
@@ -41,6 +41,16 @@ const DiplomadoMeditacion = () => {
 			</div>
 			<div className="w-full h-auto ">
 				<InfoSection6 />
+			</div>
+			<div className="w-full h-auto ">
+				<InfoSection7 />
+			</div>
+			<div className="w-full h-auto ">
+				<InfoSection8 />
+			</div>
+			<div className="w-full h-[250px] bg-[var(--zen-analog2)]">
+				<FooterMarquee />
+				<Footer background="bg-[var(--zen-analog2)]" />
 			</div>
 		</div>
 	);

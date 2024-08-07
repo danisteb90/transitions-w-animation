@@ -23,7 +23,6 @@ const InfoSection6 = () => {
 			<div className="slider-container p-[50px]">
 				<Swiper
 					navigation
-					pagination={{ type: "fraction" }}
 					modules={[Autoplay, Navigation, Pagination]}
 					className="xl:h-[400px] h-[600px] w-full text-[var(--zen-base)] text-[20px] font-bold"
 					slidesPerView={2}
