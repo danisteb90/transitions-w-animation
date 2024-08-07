@@ -75,9 +75,9 @@ const InfoSection3 = () => {
 			<h2 className="gSans xl:text-[26px] text-[21px] text-center">
 				Aprende a vaciarte y la Plenitud de la existencia colmará tu Sed.
 			</h2>
-			<div className="xl:w-[250px] w-[140px] h-[50px] bg-[var(--zen-analog)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 shadow-md shadow-[var(--zen-pilaresanim)]">
+			<div className="xl:w-[250px] w-[140px] h-[60px] bg-[var(--zen-analog)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 shadow-md shadow-[var(--zen-pilaresanim)]">
 				<a
-					href="https://buy.stripe.com/14kcPefJ895B6xGeUUgit a"
+					href="https://buy.stripe.com/14kcPefJ895B6xGeUU"
 					target="_blank"
 					className="gSans xl:text-[24px] text-[16px] text-[var(--zen-white)]"
 				>

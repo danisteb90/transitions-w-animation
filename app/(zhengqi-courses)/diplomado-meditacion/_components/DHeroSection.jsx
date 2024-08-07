@@ -34,21 +34,21 @@ const DHeroSection = () => {
 					className="w-full h-full object-cover"
 				/>
 			</div>
-			<div className="absolute top-[50%] translate-y-[-50%] md:right-[4%] right-[50%] md:translate-x-0 translate-x-[50%] bg-[#000000ab] 2xl:w-6/12 xl:w-6/12 w-5/6 xl:h-[65%] h-[80%] rounded-2xl backdrop-blur-lg z-0 md:p-12 p-4">
-				<h2 className="gSansMedium 2xl:text-[40px] md:text-[30px] text-[20px] text-[var(--zen-white)] font-bold">
+			<div className="absolute top-[50%] translate-y-[-50%] md:right-[4%] right-[50%] md:translate-x-0 translate-x-[50%] bg-[#000000ab] xl:w-6/12 w-5/6 xl:h-[65%] h-[80%] rounded-2xl backdrop-blur-lg z-0 md:p-8 p-4">
+				<h2 className="gSansMedium 2xl:text-[36px] md:text-[30px] text-[20px] text-[var(--zen-white)] font-bold">
 					DIPLOMADO EN MEDITACIÓN
 				</h2>
-				<h3 className="gSans 2xl:text-[30px] xl:text-[20px] text-[16px] text-[var(--zen-white)] font-bold 2xl:mb-8 mb-4">
+				<h3 className="gSans 2xl:text-[28px] xl:text-[20px] text-[16px] text-[var(--zen-white)] font-bold 2xl:mb-6 mb-4">
 					Formación en línea para Instructores en Meditación
 				</h3>
 				<div className={`${lato.className} flex flex-col 2xl:gap-7 gap-5`}>
-					<p className="2xl:text-[21px] md:text-[16px] text-[14px] text-[var(--zen-white)]">
+					<p className="2xl:text-[19px] md:text-[16px] text-[14px] text-[var(--zen-white)]">
 						Te ofrecemos un programa de formación holística que potencia tu
 						desarrollo personal y te brinda la posibilidad de guiar a otr@s en
 						su proceso de autosuperación a través del Bello Arte de la
 						Meditación.
 					</p>
-					<p className="2xl:text-[21px] md:text-[16px] text-[14px] text-[var(--zen-white)]">
+					<p className="2xl:text-[19px] md:text-[16px] text-[14px] text-[var(--zen-white)]">
 						Mediante una combinación de teoría, ejercicios prácticos y el
 						desarrollo de un programa de autocuidado, experimentarás una
 						formación integral, reflexiva y contemplativa. Este enfoque te
@@ -56,7 +56,7 @@ const DHeroSection = () => {
 						realización espiritual y contribuir de manera valiosa a la evolución
 						de otr@s.
 					</p>
-					<p className="2xl:text-[21px] md:text-[16px] text-[14px] text-[var(--zen-white)]">
+					<p className="2xl:text-[19px] md:text-[16px] text-[14px] text-[var(--zen-white)]">
 						¡Inscríbete hoy y comienza el Camino hacia Tu Auto Maestría!
 					</p>
 				</div>
