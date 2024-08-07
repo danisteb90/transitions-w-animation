@@ -1,8 +1,8 @@
 const InfoModal = () => {
 	return (
 		<>
-			<div className="absolute bottom-[10px] left-[50%] translate-x-[-50%] flex items-center justify-center z-[3]">
-				<div className="bg-[var(--zen-analog2)] p-[20px] rounded-lg shadow-lg flex items-center justify-around w-[600px] h-[100px]">
+			<div className="absolute bottom-[10px] left-[50%] translate-x-[-50%] flex items-center justify-center z-[1]">
+				<div className="bg-[var(--zen-analog2)] p-[20px] rounded-lg shadow-lg flex items-center justify-around xl:w-[600px] w-[330px] h-[100px]">
 					<h2 className="gSansMedium text-[26px] font-bold text-center">
 						¿Aún no te has inscrito?
 					</h2>
@@ -10,7 +10,7 @@ const InfoModal = () => {
 						<a
 							href="https://buy.stripe.com/14kcPefJ895B6xGeUU"
 							target="_blank"
-							className="gSans xl:text-[20px] text-[16px] text-[var(--zen-white)]"
+							className="gSans xl:text-[20px] text-[14px] text-[var(--zen-white)]"
 						>
 							Empieza Ahora
 						</a>
