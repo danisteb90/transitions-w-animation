@@ -8,6 +8,7 @@ import InfoSection2 from "./_components/InfoSection2";
 import InfoSection3 from "./_components/InfoSection3";
 import InfoSection4 from "./_components/InfoSection4";
 import InfoSection5 from "./_components/InfoSection5";
+import InfoSection6 from "./_components/InfoSection6";
 
 const greatVibes = Great_Vibes({
 	subsets: ["latin"],
@@ -37,6 +38,9 @@ const DiplomadoMeditacion = () => {
 			</div>
 			<div className="w-full h-auto mt-[50px]">
 				<InfoSection5 />
+			</div>
+			<div className="w-full h-auto ">
+				<InfoSection6 />
 			</div>
 		</div>
 	);

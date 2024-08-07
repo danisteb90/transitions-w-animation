@@ -93,7 +93,7 @@ const InfoSection4 = () => {
 
 	return (
 		<div className="w-full h-full xl:pl-[120px] pl-0 flex flex-col justify-center items-center">
-			<h2 className="gSansMedium font-bold w-full h-[150px] flex items-center justify-center text-center xl:text-[32px] text-[26px] text-[var(--zen-analog)]">
+			<h2 className="gSansMedium font-bold w-full h-[150px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
 				¿Qué vas a aprender en este Diplomado en Meditación?
 			</h2>
 			<div className="w-full h-full flex xl:flex-row flex-col justify-center items-center">
