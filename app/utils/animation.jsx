@@ -14,7 +14,7 @@ export const animatePageIn = () => {
 		tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
 			yPercent: 0,
 		}).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
-			yPercent: 100,
+			yPercent: 110,
 			stagger: 0.2,
 		});
 	}
