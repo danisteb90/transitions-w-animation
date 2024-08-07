@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import QuestionsAccordeon from "./QuestionsAccordeon";
+import InfoModal from "./InfoModal";
 
 const InfoSection8 = () => {
 	const [open, setOpen] = useState(false);
@@ -76,7 +77,7 @@ const InfoSection8 = () => {
 	return (
 		<div className="w-full h-full xl:pl-[120px] pl-0 flex flex-col justify-center items-center mt-[50px]">
 			<div className="w-full h-full flex flex-col items-center justify-center flex-1 xl:border-r-2 xl:border-b-0 border-b-2 xl:border-r-[var(--zen-analog)] border-b-[var(--zen-analog)] mb-[20px]">
-				<h3 className="w-full text-center gSansMedium text-[26px] font-bold mb-[30px]">
+				<h3 className="w-full text-center gSansMedium xl:text-[40px] text-[24px] font-bold mb-[30px] text-[var(--zen-analog)]">
 					Preguntas Frecuentes
 				</h3>
 				{preguntasList.map((data, index) => {
@@ -99,6 +100,9 @@ const InfoSection8 = () => {
 				>
 					Tengo otra pregunta
 				</a>
+			</div>
+			<div className="w-full h-full mt-[80px] mb-[60px] relative">
+				<InfoModal />
 			</div>
 		</div>
 	);

@@ -12,12 +12,10 @@ import InfoSection7 from "./_components/InfoSection7";
 import InfoSection8 from "./_components/InfoSection8";
 import FooterMarquee from "@/components/FooterMarquee";
 import Footer from "@/components/Footer";
-import InfoModal from "./_components/InfoModal";
 
 const DiplomadoMeditacion = () => {
 	return (
 		<div className="w-full h-screen">
-			<InfoModal />
 			<LeftMenu />
 			<ContactButton text="Contáctanos" />
 			<ArrowDown />
@@ -30,22 +28,22 @@ const DiplomadoMeditacion = () => {
 			<div className="w-full h-auto">
 				<InfoSection2 />
 			</div>
-			<div className="w-full xl:h-screen h-auto xl:mt-0 mt-10">
+			<div className="w-full h-auto">
 				<InfoSection3 />
 			</div>
 			<div className="w-full h-auto">
 				<InfoSection4 />
 			</div>
-			<div className="w-full h-auto mt-[50px]">
+			<div className="w-full h-auto">
 				<InfoSection5 />
 			</div>
-			<div className="w-full h-auto ">
+			<div className="w-full h-auto">
 				<InfoSection6 />
 			</div>
-			<div className="w-full h-auto ">
+			<div className="w-full h-auto">
 				<InfoSection7 />
 			</div>
-			<div className="w-full h-auto ">
+			<div className="w-full h-auto">
 				<InfoSection8 />
 			</div>
 			<div className="w-full h-[250px] bg-[var(--zen-analog2)]">

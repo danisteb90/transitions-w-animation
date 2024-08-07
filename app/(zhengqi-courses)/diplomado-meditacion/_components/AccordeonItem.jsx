@@ -11,10 +11,12 @@ const AccordeonItem = ({ open, toggle, title, lessons }) => {
 	return (
 		<div className={`${lato.className} w-full px-[30px] mb-[30px]`}>
 			<div
-				className="py-[25px] px-[50px] flex justify-between items-center cursor-pointer border-2 border-[var(--zen-analog2)] rounded-xl"
+				className="py-[12px] px-[50px] flex justify-between items-center cursor-pointer border-2 border-[var(--zen-analog2)] rounded-xl"
 				onClick={toggle}
 			>
-				<p className="gSansMedium text-[24px] font-bold">{title}</p>
+				<p className="gSansMedium xl:text-[24px] text-[18px] font-bold">
+					{title}
+				</p>
 				<div className="gSans text-[24px]">
 					{open ? <FaMinus /> : <FaPlus />}
 				</div>

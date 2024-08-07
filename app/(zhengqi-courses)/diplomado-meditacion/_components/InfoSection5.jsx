@@ -39,24 +39,26 @@ const InfoSection5 = () => {
 	];
 
 	return (
-		<div className="w-full h-full flex flex-col items-center justify-center">
+		<div className="w-full h-full flex flex-col items-center justify-center mt-[50px]">
+			<div className="w-full h-full flex flex-col items-center justify-center xl:ml-[120px] ml-0 text-[var(--zen-analog)]">
+				<h2 className="w-full text-center gSansMedium font-bold xl:text-[45px] text-[24px] ">
+					Conoce a tu Facilitador
+				</h2>
+				<h3 className="gSansMedium font-bold xl:text-[32px] text-[21px] text-center">
+					Chen Tuan Li
+				</h3>
+			</div>
 			<div className="w-full h-full flex flex-col xl:flex-row items-center justify-center">
-				<div className="w-full h-full xl:p-10 p-4 flex items-center justify-center xl:ml-[120px] ml-0">
+				<div className="w-full xl:h-[700px] h-full xl:p-10 p-4 flex items-center justify-center xl:ml-[120px] ml-0">
 					<Image
 						src={"/Assets/ChenTuanLi.webp"}
 						alt="instructor-bg"
 						width={1024}
 						height={1024}
-						className="w-[95%] h-[95%] object-cover rounded-2xl shadow-2xl shadow-black scale-x-[-1]"
+						className="w-full h-full object-cover rounded-2xl shadow-2xl shadow-black scale-x-[-1]"
 					/>
 				</div>
 				<div className="w-full h-[80%] xl:p-12 p-8 flex flex-col items-center justify-center">
-					<h2 className="gSansMedium font-bold xl:text-[45px] text-[24px]">
-						Conoce a tu Facilitador
-					</h2>
-					<h3 className="gSans xl:text-[26px] text-[21px] text-center">
-						Chen Tuan Li
-					</h3>
 					<div className="w-full h-full flex flex-col items-start justify-start gap-[20px] mt-[30px]">
 						<p
 							className={`${lato.className} 2xl:text-[21px] xl:text-[16px] text-[14px]`}
@@ -106,7 +108,7 @@ const InfoSection5 = () => {
 								alt="instructor-firma"
 								width={500}
 								height={500}
-								className="object-cover w-[70%] ml-[-10px]"
+								className="object-cover w-[85%] ml-[-15px]"
 							/>
 						</div>
 					</div>

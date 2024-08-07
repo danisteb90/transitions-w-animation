@@ -9,12 +9,12 @@ const lato = Lato({
 const InfoSection7 = () => {
 	return (
 		<div
-			className={`${lato.className} w-full h-full flex flex-col xl:ml-[120px] ml-0`}
+			className={`${lato.className} w-full h-full flex flex-col xl:ml-[75px] ml-0 mt-[-20px]`}
 		>
-			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center xl:text-[40px] text-[24px]">
+			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center ">
 				¿Listo para Comenzar?
 			</h2>
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col w-full items-center justify-center">
 				<div className="xl:w-[850px] w-[320px] h-auto bg-gradient-to-b from-[var(--zen-analog)] to-[var(--zen-analog2)] rounded-3xl shadow-lg shadow-[var(--zen-pilaresanim)] p-[40px] flex flex-col items-center justify-center">
 					<h2 className="gSansMedium xl:text-[40px] text-[20px] text-[var(--zen-white)] mb-[30px] font-bold">
 						Diplomado en Meditación

@@ -20,18 +20,19 @@ const InfoSection6 = () => {
 			<h2 className="gSansMedium font-bold w-full mb-[20px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
 				Lo que dicen nuestros Alumn@s
 			</h2>
-			<div className="slider-container p-[50px]">
+			<div className="slider-container xl:p-[50px] p-[10px]">
 				<Swiper
 					navigation
 					modules={[Autoplay, Navigation, Pagination]}
-					className="xl:h-[400px] h-[600px] w-full text-[var(--zen-base)] text-[20px] font-bold"
+					className="xl:h-[400px] h-[500px] w-full text-[var(--zen-base)] text-[20px] font-bold"
 					slidesPerView={2}
 					spaceBetween={50}
 					autoplay={{ delay: 10000, disableOnInteraction: false }}
 					loop={true}
 					breakpoints={{
-						350: {
+						300: {
 							slidesPerView: 1,
+							spaceBetween: 10,
 						},
 						768: {
 							slidesPerView: 2,
@@ -39,9 +40,11 @@ const InfoSection6 = () => {
 					}}
 				>
 					<SwiperSlide>
-						<div className="flex h-full w-full items-center justify-center bg-slate-300 rounded-2xl text-[var(--zen-white)] p-[40px] ">
+						<div className="flex h-full w-full items-center justify-center bg-slate-300 rounded-2xl text-[var(--zen-white)] p-[40px]">
 							<div className="relative w-full h-full flex flex-col items-start justify-center bg-gradient-to-r from-sky-600 to-[var(--zen-analog)] rounded-2xl px-[15px] py-[30px] shadow-md shadow-[var(--zen-pilaresanim)]">
-								<p className="xl:text-[16px] text-[13px] text-[var(--zen-white)] xl:text-left text-center xl:mb-[30px] mb-[10px] font-medium">
+								<p
+									className={`xl:text-[18px] text-[13px] text-[var(--zen-white)] xl:text-left text-center xl:mb-[30px] mb-[10px] font-medium`}
+								>
 									Conocí a Chen Tuan Li hace un par de años buscando sobre
 									taoísmo. Me adentré a descubrir lo que su mentoría entrega, y
 									ha sido muy liberador. Respetando los procesos de cada un@

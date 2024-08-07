@@ -9,9 +9,9 @@ const lato = Lato({
 const InfoSection2 = () => {
 	return (
 		<div
-			className={`${lato.className} h-full w-full xl:pl-[120px] flex flex-col justify-center items-center `}
+			className={`${lato.className} h-full w-full xl:pl-[120px] flex flex-col justify-center items-center mt-[50px]`}
 		>
-			<h2 className="gSansMedium font-bold w-full mb-[80px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
+			<h2 className="gSansMedium font-bold w-full mb-[100px] flex items-center justify-center text-center xl:text-[40px] text-[28px] text-[var(--zen-analog)]">
 				¿Qué vas a aprender en este Diplomado en Meditación?
 			</h2>
 			<div className="w-full grid xl:grid-cols-4 grid-cols-1 xl:grid-rows-2 grid-rows-8 xl:gap-4 xl:p-6 px-2">
@@ -23,7 +23,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Formación basada en las ocho etapas de una experiencia cúlmine, con
 						las cuales, identificarás el proceso en el que se encuentra tu
 						futuro Alumno/a.
@@ -37,7 +37,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Aprendizaje de múltiples técnicas de meditación para avanzar en cada
 						una de las etapas, y con las que guiar el proceso de tu futuro
 						Alumno/a.
@@ -51,7 +51,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Instrucción que, además de equilibrar lo teórico y lo práctico, te
 						brinda el conocimiento filosófico de las principales Escuelas
 						Espirituales.
@@ -65,7 +65,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Incluye un programa complementario de Autocuidado para tu propia
 						preparación como Instructor/a de Meditación.
 					</p>
@@ -78,7 +78,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Seminarios intensivos presenciales y Retiro de Consolidación en un
 						entorno natural al término del Diplomado (opcionales en España).
 					</p>
@@ -91,7 +91,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Acompañamiento grupal gratuito durante el Diplomado y tres meses
 						adicionales al término del mismo.
 					</p>
@@ -104,7 +104,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Acceso opcional a asesorías individuales de coaching a precio
 						especial.
 					</p>
@@ -117,7 +117,7 @@ const InfoSection2 = () => {
 						height={375}
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
-					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px]">
+					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
 						Todo ello entregado por Chen Tuan Li, Facilitador acreditado con más
 						de 25 años de experiencia y práctica.
 					</p>

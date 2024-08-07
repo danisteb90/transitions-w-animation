@@ -34,7 +34,7 @@ const DHeroSection = () => {
 					className="w-full h-full object-cover"
 				/>
 			</div>
-			<div className="absolute top-[50%] translate-y-[-50%] md:right-[4%] right-[50%] md:translate-x-0 translate-x-[50%] bg-[#000000ab] xl:w-6/12 w-5/6 xl:h-[65%] h-[80%] rounded-2xl backdrop-blur-lg z-0 md:p-8 p-4">
+			<div className="absolute top-[50%] translate-y-[-50%] md:right-[4%] right-[50%] md:translate-x-0 translate-x-[50%] bg-[#000000ab] xl:w-6/12 w-5/6 h-auto rounded-2xl backdrop-blur-lg z-0 md:p-8 p-4">
 				<h2 className="gSansMedium 2xl:text-[36px] md:text-[30px] text-[20px] text-[var(--zen-white)] font-bold">
 					DIPLOMADO EN MEDITACIÓN
 				</h2>

@@ -1,7 +1,10 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const Footer = ({ background = "bg-[var(--zen-pilaresanim)]" }) => {
+const Footer = ({
+	background = "bg-[var(--zen-pilaresanim)]",
+	marginLeft = "ml-[120px]",
+}) => {
 	return (
 		<>
 			<section
@@ -35,10 +38,12 @@ const Footer = ({ background = "bg-[var(--zen-pilaresanim)]" }) => {
 						</a>
 					</div>
 				</div>
-				<div className="absolute bottom-0 left-0 w-full h-[50px] text-[var(--zen-white)] text-sm">
+				<div
+					className={`absolute bottom-0 left-0 w-full h-[50px] text-[var(--zen-white)] text-sm ${marginLeft}`}
+				>
 					<p className="pt-3 pl-3 italic">
-						Diseño Web, Integra Creative Agency. Textos, Chen Tuan Li. © 2024
-						Todos los derechos reservados.
+						Integra Creative Agency en colaboración con Tao Mentoring Digital
+						Lab © Todos los derechos reservados 2024
 					</p>
 				</div>
 			</section>

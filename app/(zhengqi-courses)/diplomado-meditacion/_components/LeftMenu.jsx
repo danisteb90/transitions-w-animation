@@ -36,9 +36,9 @@ const LeftMenu = () => {
 
 	return (
 		<section className="fixed xl:top-0 bottom-0 left-0 xl:w-[120px] w-full h-[100px] bg-[var(--zen-base)] xl:h-screen flex xl:flex-col justify-between items-center shadow-lg shadow-black px-3 z-[3]">
-			<div className="w-full flex items-center justify-start xl:mt-5 mt-0">
+			<div className="w-full flex items-center justify-center xl:mt-5 mt-0">
 				<Image
-					src={"/Assets/Logo-Azul.png"}
+					src={"/Assets/logosd.png"}
 					alt="logo"
 					width={768}
 					height={1024}

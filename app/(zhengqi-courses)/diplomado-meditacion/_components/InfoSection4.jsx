@@ -1,10 +1,12 @@
 "use client";
 import { useState } from "react";
 import AccordeonItem from "./AccordeonItem";
+import ModalForm from "./ModalForm";
 
 const InfoSection4 = () => {
 	const [open, setOpen] = useState(false);
 	const [open2, setOpen2] = useState(false);
+	const [isOpenModal, setIsOpenModal] = useState(false);
 
 	const toggle = (index) => {
 		if (open === index) {
@@ -18,6 +20,14 @@ const InfoSection4 = () => {
 			return setOpen2(null);
 		}
 		setOpen2(index);
+	};
+
+	const openModal = () => {
+		setIsOpenModal(true);
+	};
+
+	const closeModal = () => {
+		setIsOpenModal(false);
 	};
 
 	const meditacionList = [
@@ -92,12 +102,12 @@ const InfoSection4 = () => {
 	];
 
 	return (
-		<div className="w-full h-full xl:pl-[120px] pl-0 flex flex-col justify-center items-center">
+		<div className="w-full h-full xl:pl-[120px] pl-0 flex flex-col justify-center items-center mt-[30px]">
 			<h2 className="gSansMedium font-bold w-full h-[150px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
 				¿Qué vas a aprender en este Diplomado en Meditación?
 			</h2>
-			<div className="w-full h-full flex xl:flex-row flex-col justify-center items-center">
-				<div className="w-full h-full flex flex-col items-center justify-center flex-1 xl:border-r-2 xl:border-b-0 border-b-2 xl:border-r-[var(--zen-analog)] border-b-[var(--zen-analog)] mb-[20px]">
+			<div className="w-full h-full flex xl:flex-row flex-col justify-center">
+				<div className="w-full h-full flex flex-col justify-center flex-1 mb-[20px]">
 					<h3 className="w-full text-center gSansMedium text-[26px] font-bold mb-[30px]">
 						Programa Meditación
 					</h3>
@@ -130,6 +140,19 @@ const InfoSection4 = () => {
 					})}
 				</div>
 			</div>
+			<div className="flex w-full items-center justify-center cursor-pointer transition-all duration-600 z-[2]">
+				<p
+					onClick={openModal}
+					className="gSansMedium xl:text-[24px] text-[16px] text-[var(--zen-base)] hover:text-[var(--zen-lightorange)] underline"
+				>
+					Programa Detallado
+				</p>
+			</div>
+			{isOpenModal && (
+				<div className="fixed inset-0 z-[3] flex items-center justify-center bg-black bg-opacity-80">
+					<ModalForm onClose={closeModal} />
+				</div>
+			)}
 		</div>
 	);
 };

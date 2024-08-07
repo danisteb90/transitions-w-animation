@@ -1040,3 +1040,91 @@ body {
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
+
+/*Form*/
+
+#registration-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(--zen-analog);
+  color: var(--zen-white);
+  border-radius: 20px;
+  width: 700px;
+  height: fit-content;
+  font-family: "Gambetta", sans-serif;
+  font-size: 18px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 6px;
+  color: black;
+}
+
+.form-group select {
+  width: 150px;
+  color: black;
+}
+
+.form-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+button {
+  padding: 15px 25px;
+  text-align: center;
+  background-color: var(--zen-analog2);
+  font-size: 21px;
+  border-radius: 10px;
+}
+
+.consent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.consent input[type="checkbox"] {
+  width: 30px;
+  /* Aumenta el ancho */
+  height: 30px;
+  /* Aumenta la altura */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #registration-form {
+    font-size: 14px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+}
