@@ -14,12 +14,15 @@ export const metadata = {
 		images: [
 			{
 				url: "https://escueladelibertad.com/Assets/logosd.png",
-				width: 768,
-				height: 1024,
+				width: 630,
+				height: 980,
 				alt: "logo",
 			},
 		],
 		siteName: "Escuela de Libertad",
+	},
+	twitter: {
+		card: "summary_large_image",
 	},
 };
 
