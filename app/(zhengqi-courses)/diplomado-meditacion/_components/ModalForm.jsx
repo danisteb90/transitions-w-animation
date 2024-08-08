@@ -33,7 +33,7 @@ function ModalForm({ onClose }) {
 		<>
 			<form
 				id="registration-form"
-				action="https://script.google.com/macros/s/AKfycbw7UUztXu5935Epcm8M9FCVaGBnMBNp7_hZxGVy76h-N2pnFrietqgVRtMiVcQyaE7Z/exec"
+				action="https://script.google.com/macros/s/AKfycbwCQJzutkCwM5Mbo8ScF5eiQDhbQExnh6szHlN3bjFmPckY8a52TkJvVHZjYfY2Y1td/exec"
 				method="POST"
 				onSubmit={handleSubmit}
 			>

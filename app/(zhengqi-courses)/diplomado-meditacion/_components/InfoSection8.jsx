@@ -16,7 +16,7 @@ const InfoSection8 = () => {
 	const preguntasList = [
 		{
 			question: "¿Cuándo inicia y termina el Diplomado en Meditación?",
-			answer: ["Inicia en septiembre de 2024 y termina en junio de 2024."],
+			answer: ["Inicia en septiembre de 2024 y termina en junio de 2025."],
 		},
 		{
 			question:
