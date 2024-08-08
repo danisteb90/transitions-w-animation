@@ -61,13 +61,22 @@ function ModalForm({ onClose }) {
 					<label htmlFor="phone">Teléfono:</label>
 					<select id="country-code" name="country-code">
 						<option value="+34">España (+34)</option>
-						<option value="+1">EEUU (+1)</option>
-						<option value="+52">México (+52)</option>
+						<option value="+54">Argentina (+54)</option>
+						<option value="+32">Bélgica (+32)</option>
+						<option value="+56">Chile (+56)</option>
+						<option value="+57">Colombia (+57)</option>
 						<option value="+593">Ecuador (+593)</option>
-						<option value="+594">Peru (+594)</option>
-						<option value="+595">Chile (+595)</option>
-						<option value="+505">Colombia (+505)</option>
-						<option value="+57">Argentina (+57)</option>
+						<option value="+33">Francia (+33)</option>
+						<option value="+49">Alemania (+49)</option>
+						<option value="+39">Italia (+39)</option>
+						<option value="+52">México (+52)</option>
+						<option value="+31">Países Bajos (+31)</option>
+						<option value="+51">Perú (+51)</option>
+						<option value="+351">Portugal (+351)</option>
+						<option value="+44">Reino Unido (+44)</option>
+						<option value="+1">EEUU (+1)</option>
+						<option value="+58">Venezuela (+58)</option>
+						<option value="+1">Canadá (+1)</option>
 					</select>
 					<input type="tel" id="phone" name="Telefono" required />
 				</div>
@@ -78,7 +87,7 @@ function ModalForm({ onClose }) {
 				</label>
 				<div className="form-button">
 					<button type="submit" id="submit-button" value="sumbit">
-						Enviar
+						Descargar PDF
 					</button>
 				</div>
 			</form>
