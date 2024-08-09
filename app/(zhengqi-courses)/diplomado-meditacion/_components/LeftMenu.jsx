@@ -35,8 +35,8 @@ const LeftMenu = () => {
 	}, []);
 
 	return (
-		<section className="fixed xl:top-0 bottom-0 left-0 xl:w-[120px] w-full h-[100px] bg-[var(--zen-base)] xl:h-screen flex xl:flex-col justify-between items-center shadow-lg shadow-black px-3 z-[3]">
-			<div className="w-full flex items-center justify-center xl:mt-5 mt-0">
+		<section className="fixed xl:top-0 bottom-0 left-0 xl:w-[120px] w-full h-[100px] bg-[var(--zen-base)] xl:h-screen flex xl:flex-col flex-row justify-between items-center shadow-lg shadow-black px-3 z-[3]">
+			<div className="w-full flex items-center xl:justify-center justify-start xl:mt-5 mt-0">
 				<Image
 					src={"/Assets/logosd.png"}
 					alt="logo"
@@ -45,7 +45,7 @@ const LeftMenu = () => {
 					className="xl:w-[80px] w-[50px]"
 				/>
 			</div>
-			<div className="inscription-button gSansMedium xl:-rotate-90 xl:mb-[120px] xl:w-[380px] w-full flex items-center justify-center">
+			<div className="inscription-button gSansMedium xl:-rotate-90 xl:mb-[120px] xl:w-[380px] w-[352px] flex items-center justify-center">
 				<FaArrowRight className="inscription-right text-[var(--zen-white)] text-[16px] mr-1" />
 				<a
 					href="https://buy.stripe.com/14kcPefJ895B6xGeUU"

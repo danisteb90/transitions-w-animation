@@ -52,7 +52,7 @@ const InfoSection2 = () => {
 						className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[57%] h-[57%] object-contain"
 					/>
 					<p className="w-full h-full flex items-center justify-start text-center text-[22px] p-[15px] pt-[30px] leading-[27px]">
-						Instrucción que, además de equilibrar lo teórico y lo práctico, te
+						Formación que, además de equilibrar lo teórico y lo práctico, te
 						brinda el conocimiento filosófico de las principales Escuelas
 						Espirituales.
 					</p>

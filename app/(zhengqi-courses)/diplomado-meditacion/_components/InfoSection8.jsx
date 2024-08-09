@@ -26,7 +26,7 @@ const InfoSection8 = () => {
 		{
 			question: "¿Qué materiales requiero?",
 			answer: [
-				"Para las prácticas en clase de un lugar cómodo y tranquilo, una silla y donde tomar apuntes. Y, para tus prácticas diarias, te recomendamos tener un zafu o un banco de meditación.",
+				" Para las prácticas en clase requieres un lugar cómodo y tranquilo, una silla y donde tomar apuntes. Y, para tus prácticas diarias, te recomendamos tener un zafu o un banco de meditación.",
 			],
 		},
 		{
@@ -59,7 +59,7 @@ const InfoSection8 = () => {
 			question:
 				"¿Las actividades presenciales están incluidas en el valor de inversión?",
 			answer: [
-				"No. El valor de inversión no incluye la reserva de plaza (€15 por seminario) y la alimentación de los Seminarios Intensivos ni el alojamiento y alimentación (por definir) durante el Retiro de Consolidación. Toma en cuenta que estas actividades presenciales son opcionales para quienes residen en España.",
+				"No. El valor de tu inversión no incluye la reserva de plaza (€15 por seminario) ni la alimentación de los Seminarios Intensivos. Tampoco está incluido el alojamiento ni la alimentación del Retiro de Consolidación. Toma en cuenta que estas actividades presenciales son opcionales y se realizarán en España.",
 			],
 		},
 		{
@@ -76,7 +76,7 @@ const InfoSection8 = () => {
 
 	return (
 		<div className="w-full h-full xl:pl-[120px] pl-0 flex flex-col justify-center items-center mt-[50px]">
-			<div className="w-full h-full flex flex-col items-center justify-center flex-1 xl:border-r-2 xl:border-b-0 border-b-2 xl:border-r-[var(--zen-analog)] border-b-[var(--zen-analog)] mb-[20px]">
+			<div className="w-full h-full flex flex-col items-center justify-center flex-1 mb-[20px]">
 				<h3 className="w-full text-center gSansMedium xl:text-[40px] text-[24px] font-bold mb-[30px] text-[var(--zen-analog)]">
 					Preguntas Frecuentes
 				</h3>
@@ -101,7 +101,7 @@ const InfoSection8 = () => {
 					Tengo otra pregunta
 				</a>
 			</div>
-			<div className="w-full h-full mt-[100px] mb-[30px] relative">
+			<div className="w-full h-full mt-[130px] mb-[50px] relative">
 				<InfoModal />
 			</div>
 			<h2 className="gSans xl:text-[26px] text-[21px] text-center mb-[30px]">

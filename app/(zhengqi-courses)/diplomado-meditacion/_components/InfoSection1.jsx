@@ -8,9 +8,9 @@ const lato = Lato({
 
 const InfoSection1 = () => {
 	return (
-		<div className="w-full h-full flex flex-col xl:flex-row items-center justify-center">
+		<div className="w-full h-full flex flex-col xl:flex-row items-center justify-center mt-[75px]">
 			<div className="w-full h-[80%] p-8 flex flex-col items-end justify-center gap-5 xl:ml-32 ml-0">
-				<h2 className="gSansMedium font-bold xl:text-[45px] text-[28px] text-[var(--zen-analog)] xl:leading-[50px] leading-0">
+				<h2 className="gSansMedium xl:text-left text-center font-bold xl:text-[45px] text-[28px] text-[var(--zen-analog)] xl:leading-[50px] leading-0">
 					¿Qué es el Diplomado en Meditación de la Escuela de Libertad?
 				</h2>
 				<p

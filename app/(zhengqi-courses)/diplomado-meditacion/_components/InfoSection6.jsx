@@ -17,7 +17,7 @@ const lato = Lato({
 const InfoSection6 = () => {
 	return (
 		<section className={`${lato.className} py-12 xl:ml-[120px] ml-0`}>
-			<h2 className="gSansMedium font-bold w-full mb-[20px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
+			<h2 className="gSansMedium font-bold w-full mb-[20px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)] xl:px-0 px-[15px]">
 				Lo que dicen nuestros Alumn@s
 			</h2>
 			<div className="slider-container xl:p-[50px] p-[10px]">
