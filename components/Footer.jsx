@@ -9,9 +9,9 @@ const Footer = ({
 	return (
 		<>
 			<section
-				className={`relative w-full h-full flex items-start justify-end pt-[50px] ${background} overflow-hidden`}
+				className={`relative w-full h-full flex items-start justify-end pt-[50px] ${background} overflow-hidden z-[2]`}
 			>
-				<div className="relative xl:bottom-0 bottom-[50px] w-[330px] xl:w-[450px] flex flex-col items-start justify-start gap-2">
+				<div className="relative xl:bottom-0 bottom-[52px] w-[315px] xl:w-[450px] flex flex-col items-start justify-start gap-2 ">
 					<div className="flex items-center justify-center">
 						<a
 							href="https://wa.me/34684408835"
@@ -40,7 +40,7 @@ const Footer = ({
 					</div>
 				</div>
 				<div
-					className={`absolute xl:bottom-0 bottom-[125px] left-0 w-full h-[50px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
+					className={`absolute xl:bottom-0 bottom-[140px] left-0 w-full h-[50px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
 				>
 					<p
 						className="italic text-[var(--zen-pilaresanim)] hover:underline hover:cursor-pointer"
