@@ -81,6 +81,27 @@ const InfoSection6 = () => {
 					<SwiperSlide>
 						<div className="flex h-full w-full items-center justify-center bg-slate-300 rounded-2xl text-[var(--zen-white)] p-[40px]">
 							<div className="relative w-full h-full flex flex-col items-start justify-center bg-gradient-to-r from-sky-600 to-[var(--zen-analog)] rounded-2xl px-[15px] py-[30px] shadow-md shadow-[var(--zen-pilaresanim)]">
+								<p
+									className={`xl:text-[18px] text-[13px] text-[var(--zen-white)] xl:text-left text-center xl:mb-[30px] mb-[10px] font-medium`}
+								>
+									Gracias a las enseñanzas de Chen Tuan Li, la meditación se ha
+									convertido en una valiosa práctica diaria que me permite
+									mantener mi centro y experimentar la vida de una forma que
+									antes ni siquiera habría imaginado: en plenitud, en
+									autenticidad, en libertad… ¡Estoy sumamente agradecida!
+								</p>
+								<div className="absolute right-[20px] bottom-[20px] flex items-center justify-center">
+									<FaQuoteLeft className="text-[var(--zen-pilaresanim)] xl:text-[100px] text-[50px] mr-[10px] opacity-20" />
+								</div>
+								<h2 className="text-[var(--zen-white)] xl:text-left text-center flex items-center justify-center">
+									Erika A. (Ecuador)
+								</h2>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className="flex h-full w-full items-center justify-center bg-slate-300 rounded-2xl text-[var(--zen-white)] p-[40px]">
+							<div className="relative w-full h-full flex flex-col items-start justify-center bg-gradient-to-r from-sky-600 to-[var(--zen-analog)] rounded-2xl px-[15px] py-[30px] shadow-md shadow-[var(--zen-pilaresanim)]">
 								<p className="xl:text-[17px] text-[13px] text-[var(--zen-white)] xl:text-left text-center mb-[30px] font-medium">
 									Para todos quienes buscamos que nuestro viaje sea más liviano
 									y darle un real sentido a la existencia, recomiendo a Chen
