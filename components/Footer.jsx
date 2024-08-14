@@ -40,7 +40,7 @@ const Footer = ({
 					</div>
 				</div>
 				<div
-					className={`absolute xl:bottom-0 bottom-[110px] left-0 w-full h-[50px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
+					className={`absolute xl:bottom-0 bottom-[125px] left-0 w-full h-[50px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
 				>
 					<p
 						className="italic text-[var(--zen-pilaresanim)] hover:underline hover:cursor-pointer"
