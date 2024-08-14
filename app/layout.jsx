@@ -8,6 +8,7 @@ export const metadata = {
 	title: "Escuela de Libertad",
 	description:
 		"La primera Escuela de realización espiritual, basada en los ocho pilares de transformación existencial descritos por las Escuelas Ancestrales del Yin-Yang.",
+	metadataBase: new URL("https://escueladelibertad.es"),
 	openGraph: {
 		title: "Escuela de Libertad",
 		description:
