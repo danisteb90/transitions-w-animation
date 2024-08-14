@@ -39,7 +39,7 @@ const InfoSection8 = () => {
 			question:
 				"¿Hay interacción con el Facilitador o es un programa auto-guiado?",
 			answer: [
-				"No es un programa auto-guiado. Nuestro Facilitador, Chen Tuan Li, brinda las clases en directo y acompaña el proceso vía grupo privado en Telegram durante todo el Diplomado más tres meses adicionales luego de finalizar.",
+				" No es un programa auto-guiado. Nuestro Facilitador, Chen Tuan Li, brinda las clases en directo vía Zoom y acompaña el proceso vía grupo privado en Telegram durante todo el Diplomado más tres meses adicionales luego de finalizar.",
 			],
 		},
 		{
@@ -104,7 +104,7 @@ const InfoSection8 = () => {
 			<div className="w-full h-full mt-[130px] mb-[50px] relative">
 				<InfoModal />
 			</div>
-			<h2 className="gSans xl:text-[26px] text-[21px] text-center mb-[30px]">
+			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
 				¡Otra Vida es Posible!
 			</h2>
 		</div>

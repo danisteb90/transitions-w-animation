@@ -1,6 +1,12 @@
+"use client";
+import { useState } from "react";
+
 function ModalForm({ onClose }) {
+	const [buttonText, setButtonText] = useState("Descargar PDF");
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		setButtonText("Descargando...");
 
 		// Obtiene el modal y el mensaje
 		// const modalMessage = document.getElementById("modalMessage");
@@ -21,7 +27,7 @@ function ModalForm({ onClose }) {
 					// Respuesta de error
 					modalMessage.textContent = "Error: Something went wrong.";
 				}
-				setTimeout(onClose, 500);
+				setTimeout(onClose, 800);
 				window.location.href =
 					"https://drive.google.com/uc?export=download&id=1irqjdiN1pbgtDfNmdZvTs3hFclS0YyQO";
 			}
@@ -78,16 +84,16 @@ function ModalForm({ onClose }) {
 						<option value="+58">Venezuela (+58)</option>
 						<option value="+1">Canadá (+1)</option>
 					</select>
-					<input type="tel" id="phone" name="Telefono" required />
+					<input type="tel" id="phone" name="Telefono" />
 				</div>
 				<label className="consent">
-					<input type="checkbox" id="consent" name="Consent" required />
+					<input type="checkbox" id="consent" name="Consent" />
 					Me gustaría recibir comunicaciones y notificaciones electrónicas de
 					Escuela de Libertad.
 				</label>
 				<div className="form-button">
 					<button type="submit" id="submit-button" value="sumbit">
-						Descargar PDF
+						{buttonText}
 					</button>
 				</div>
 			</form>

@@ -1,3 +1,4 @@
+"use client";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -10,7 +11,7 @@ const Footer = ({
 			<section
 				className={`relative w-full h-full flex items-start justify-end pt-[50px] ${background} overflow-hidden`}
 			>
-				<div className="w-[310px] 2xl:w-[650px] flex flex-col items-start justify-start gap-2">
+				<div className="relative xl:bottom-0 bottom-[50px] w-[330px] xl:w-[450px] flex flex-col items-start justify-start gap-2">
 					<div className="flex items-center justify-center">
 						<a
 							href="https://wa.me/34684408835"
@@ -39,11 +40,17 @@ const Footer = ({
 					</div>
 				</div>
 				<div
-					className={`absolute bottom-[10px] left-0 w-full h-[50px] text-[var(--zen-white)] text-sm xl:${marginLeft} ml-0 xl:z-0`}
+					className={`absolute xl:bottom-0 bottom-[110px] left-0 w-full h-[50px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
 				>
+					<p
+						className="italic text-[var(--zen-pilaresanim)] hover:underline hover:cursor-pointer"
+						onClick={() => window.open("/politica-cookies", "_blank")}
+					>
+						Este sitio web no utiliza cookies.
+					</p>
 					<p className="italic">
 						Integra Creative Agency en colaboración con Tao Mentoring Digital
-						Lab © Todos los derechos reservados 2024
+						Lab © Todos los derechos reservados 2024.
 					</p>
 				</div>
 			</section>

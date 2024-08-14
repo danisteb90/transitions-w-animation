@@ -26,7 +26,7 @@ const InfoSection7 = () => {
 						<TiArrowRightThick className="w-1/12 text-[var(--zen-white)] xl:text-[45px] text-[35px]" />
 						<p className="w-11/12 text-[var(--zen-white)] xl:text-[21px] text-[14px]">
 							66 horas de formación teórico-práctica online mediante clases en
-							directo.
+							directo vía Zoom.
 						</p>
 					</div>
 					<div className="w-full flex items-center justify-center gap-[10px] pb-[12px] mb-[16px] border-b-2 border-[var(--zen-white)]">

@@ -18,7 +18,6 @@ const DiplomadoMeditacion = () => {
 		<div className="w-full h-screen">
 			<LeftMenu />
 			<ContactButton text="Contáctanos" />
-			<ArrowDown />
 			<div className="w-full xl:h-screen h-[800px]">
 				<DHeroSection />
 			</div>
@@ -48,7 +47,10 @@ const DiplomadoMeditacion = () => {
 			</div>
 			<div className="w-full h-[250px] bg-[var(--zen-analog2)]">
 				<FooterMarquee />
-				<Footer background="bg-[var(--zen-analog2)]" />
+				<Footer
+					background="bg-[var(--zen-analog2)]"
+					marginLeft="xl:ml-[130px]"
+				/>
 			</div>
 		</div>
 	);
