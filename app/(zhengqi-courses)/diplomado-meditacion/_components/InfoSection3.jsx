@@ -50,7 +50,7 @@ const InfoSection3 = () => {
 			</h2>
 			<div className="xl:w-[250px] w-[140px] h-[60px] bg-[var(--zen-analog)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 shadow-md shadow-[var(--zen-pilaresanim)] mt-[-18px]">
 				<a
-					href="https://buy.stripe.com/14kcPefJ895B6xGeUU"
+					href="https://buy.stripe.com/6oE5mM54u81xcW45kl"
 					target="_blank"
 					className="gSans xl:text-[24px] text-[16px] text-[var(--zen-white)]"
 				>

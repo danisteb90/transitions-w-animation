@@ -78,13 +78,22 @@ const InfoSection7 = () => {
 					<p className="text-[var(--zen-white)] xl:text-[24px] text-[16px] font-bold italic mb-[20px]">
 						¡No esperes más!
 					</p>
+					<p className="w-full text-center xl:text-[21px] text-[14px] text-[var(--zen-white)] font-bold mb-[20px]">
+						Todo esto por tan solo 490€.
+					</p>
 					<div className="xl:w-[190px] w-[140px] h-[60px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2]">
 						<a
-							href=" https://buy.stripe.com/14kcPefJ895B6xGeUU"
+							href="https://buy.stripe.com/6oE5mM54u81xcW45kl"
 							target="_blank"
 							className="gSans xl:text-[24px] text-[16px] text-[var(--zen-white)]"
 						>
 							Inscríbete Aquí
+						</a>
+					</div>
+					<div className="w-full text-center xl:text-[21px] text-[14px] text-[var(--zen-white)] font-bold mt-[20px]">
+						Para facilidades de pago.{" "}
+						<a href="mailto:teconchen@gmail.com" target="_blank">
+							Escríbenos.
 						</a>
 					</div>
 				</div>

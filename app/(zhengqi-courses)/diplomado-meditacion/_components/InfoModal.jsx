@@ -8,7 +8,7 @@ const InfoModal = () => {
 					</h2>
 					<div className="xl:w-[170px] w-[140px] xl:h-[50px] h-[80px] xl:p-0 px-[35px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2]">
 						<a
-							href="https://buy.stripe.com/14kcPefJ895B6xGeUU"
+							href="https://buy.stripe.com/6oE5mM54u81xcW45kl"
 							target="_blank"
 							className="gSans xl:text-[20px] text-[13px] text-center text-[var(--zen-white)]"
 						>

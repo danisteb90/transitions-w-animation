@@ -19,6 +19,8 @@
   --zen-skyblue: #3EB8EB;
   --zen-lightorange: #f39614;
   --zen-pilaresanim: #333333;
+  --zen-pilaresanim2: #505050;
+  --zen-pilaresanim3: #747474;
   --transition-menu1: 0.4s;
   --transition-menu2: 0.64s cubic-bezier(0.81, -0.13, 0.29, 0.95);
 }
@@ -630,6 +632,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  filter: brightness(0.4);
 }
 
 .bento_box:nth-child(1) {
@@ -704,14 +707,22 @@ body {
 
 .bento_modal_content h2 {
   font-family: "Gambetta-Medium", sans-serif;
-  font-size: 26px;
-  color: var(--zen-white);
+  font-size: 38px;
+  color: var(--zen-analog);
   width: 100%;
   text-align: center;
+}
+
+.bento_modal_subtitle {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-style: italic;
+  color: var(--zen-white);
   margin-bottom: 25px;
 }
 
-.bento_modal_content p {
+.bento_modal_info p {
   font-family: "Gambetta", sans-serif;
   font-size: 16px;
   color: var(--zen-white);
@@ -773,9 +784,9 @@ body {
   width: 70%;
   max-width: 1200px;
   height: 90%;
-  max-height: 600px;
+  max-height: 570px;
   border-radius: 1rem;
-  background-color: rgba(48, 48, 48, 0.5);
+  background-color: #00000099;
   backdrop-filter: blur(1rem);
   --webkit-backdrop-filter: blur(1rem);
   overflow: hidden;
@@ -900,11 +911,15 @@ body {
   }
 
   .bento_modal_content h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 14px;
   }
 
-  .bento_modal_content p {
+  .bento_modal_subtitle {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .bento_modal_info p {
     font-size: 12px;
   }
 
@@ -1132,5 +1147,42 @@ button {
 
   .form-group {
     flex-direction: column;
+  }
+
+  .bento_modal_container {
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bento_modal_image {
+    height: 122%;
+  }
+
+  .box_modal_image {
+    border-radius: 20px;
+  }
+
+  .bento_modal1,
+  .bento_modal2,
+  .bento_modal3,
+  .bento_modal4,
+  .bento_modal5,
+  .bento_modal6,
+  .bento_modal7,
+  .bento_modal8 {
+    height: 100%;
+    max-height: 650px;
+  }
+
+  .bento_modal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 }

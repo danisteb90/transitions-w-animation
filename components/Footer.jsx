@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Footer = ({
-	background = "bg-[var(--zen-pilaresanim)]",
+	background = "bg-gradient-to-b from-[var(--zen-pilaresanim)] via-[var(--zen-pilaresanim2)] to-[var(--zen-pilaresanim3)]",
 	marginLeft = "ml-[125px]",
 }) => {
 	return (
@@ -40,15 +40,15 @@ const Footer = ({
 					</div>
 				</div>
 				<div
-					className={`absolute xl:bottom-0 bottom-[140px] left-0 w-full h-[50px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
+					className={`absolute xl:bottom-0 bottom-[150px] left-0 w-full xl:h-[70px] h-[30px] text-[var(--zen-white)] xl:text-[16px] text-[11px] ${marginLeft} xl:z-0 xl:p-0 p-[15px]`}
 				>
 					<p
-						className="italic text-[var(--zen-pilaresanim)] hover:underline hover:cursor-pointer"
+						className="italic text-[var(--zen-white)] hover:underline hover:cursor-pointer"
 						onClick={() => window.open("/politica-cookies", "_blank")}
 					>
 						Este sitio web no utiliza cookies.
 					</p>
-					<p className="italic">
+					<p className="italic text-[var(--zen-white)]">
 						Integra Creative Agency en colaboración con Tao Mentoring Digital
 						Lab © Todos los derechos reservados 2024.
 					</p>

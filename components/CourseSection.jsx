@@ -138,7 +138,9 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">FORMACIÓN EN I CHING</div>
+							<div className="title">
+								FORMACIÓN EN I CHING SEGÚN EL LINAJE FANG SHI
+							</div>
 							<div className="topic">El Poder Del Clarividente</div>
 
 							<div className="des">
@@ -190,8 +192,10 @@ export default function CourseSection() {
 							className="img"
 						/>
 						<div className="content">
-							<div className="title">FORMACIÓN EN REALIZACIÓN ESPIRITUAL</div>
-							<div className="topic">El Gran Viaje</div>
+							<div className="title">
+								EL GRAN VIAJE: HACIA EL HOMBRE ESTELAR
+							</div>
+							<div className="topic">Formación en Realización Espiritual</div>
 							<div className="des">
 								Hay dos maneras de entender y vivir la vida. Una de ellas te
 								lleva a una vida ordinaria con más o menos éxito y prosperidad,

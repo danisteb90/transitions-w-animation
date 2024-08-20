@@ -62,7 +62,7 @@ const DHeroSection = () => {
 				</div>
 				<div className="hero-button-container gSans xl:mt-8 mt-4 2xl:w-[240px] w-[180px] h-[60px] bg-[var(--zen-white)] rounded-xl flex items-center justify-start cursor-pointer pl-3 gap-3">
 					<a
-						href="https://buy.stripe.com/14kcPefJ895B6xGeUU"
+						href="https://buy.stripe.com/6oE5mM54u81xcW45kl"
 						target="_blank"
 						className="gSans 2xl:text-[22px] text-[16px] text-[var(--zen-pilaresanim)]"
 					>

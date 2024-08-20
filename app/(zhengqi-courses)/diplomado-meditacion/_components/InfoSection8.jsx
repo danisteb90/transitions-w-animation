@@ -101,8 +101,14 @@ const InfoSection8 = () => {
 					Tengo otra pregunta
 				</a>
 			</div>
-			<div className="w-full h-full mt-[130px] mb-[50px] relative">
+			<div className="w-full h-full mt-[130px] mb-[30px] relative">
 				<InfoModal />
+			</div>
+			<div className="w-full text-center xl:text-[21px] text-[14px] text-[var(--zen-analog2)] font-bold mb-[10px]">
+				Para facilidades de pago.{" "}
+				<a href="mailto:teconchen@gmail.com" target="_blank">
+					Escríbenos.
+				</a>
 			</div>
 			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
 				¡Otra Vida es Posible!

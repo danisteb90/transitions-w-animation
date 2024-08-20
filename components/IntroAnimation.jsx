@@ -167,7 +167,7 @@ const IntroAnimation = () => {
 				className="w-full h-[250px] bg-[var(--zen-pilaresanim)]"
 			>
 				<FooterMarquee />
-				<Footer />
+				<Footer marginLeft="ml-[10px]" />
 			</div>
 		</>
 	);

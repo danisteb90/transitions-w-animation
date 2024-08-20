@@ -48,7 +48,7 @@ const LeftMenu = () => {
 			<div className="inscription-button gSansMedium xl:-rotate-90 xl:mb-[120px] xl:w-[380px] w-[352px] flex items-center justify-center">
 				<FaArrowRight className="inscription-right text-[var(--zen-white)] text-[16px] mr-1" />
 				<a
-					href="https://buy.stripe.com/14kcPefJ895B6xGeUU"
+					href="https://buy.stripe.com/6oE5mM54u81xcW45kl"
 					target="_blank"
 					className="text-[var(--zen-white)] xl:text-[26px] text-[16px] cursor-pointer hover:text-[var(--zen-lightorange)]"
 				>
