@@ -78,10 +78,14 @@ const InfoSection7 = () => {
 					<p className="text-[var(--zen-white)] xl:text-[24px] text-[16px] font-bold italic mb-[20px]">
 						¡No esperes más!
 					</p>
-					<p className="w-full text-center xl:text-[21px] text-[14px] text-[var(--zen-white)] font-bold mb-[20px]">
-						Todo esto por tan solo 490€.
+					<p className="gSansMedium font-bold w-full xl:text-[55px] text-[24px] flex items-center justify-center xl:flex-row flex-col xl:tracking-wider text-[var(--zen-white)] text-center xl:mb-[40px] mb-[18px]">
+						Todo esto por tan solo{"  "}
+						<span className="gSansMedium font-bold text-[var(--zen-base)] xl:ml-[4px] ml-[2px]">
+							{" "}
+							490€
+						</span>
 					</p>
-					<div className="xl:w-[190px] w-[140px] h-[60px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2]">
+					<div className="xl:w-[190px] w-[140px] h-[60px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center xl:flex-row flex-col cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2]">
 						<a
 							href="https://buy.stripe.com/6oE5mM54u81xcW45kl"
 							target="_blank"
@@ -90,10 +94,14 @@ const InfoSection7 = () => {
 							Inscríbete Aquí
 						</a>
 					</div>
-					<div className="w-full text-center xl:text-[21px] text-[14px] text-[var(--zen-white)] font-bold mt-[20px]">
-						Para facilidades de pago.{" "}
-						<a href="mailto:teconchen@gmail.com" target="_blank">
-							Escríbenos.
+					<div className="w-full text-center xl:text-[40px] text-[20px] text-[var(--zen-white)] font-bold xl:mt-[45px] mt-[20px]">
+						Para facilidades de pago:{" "}
+						<a
+							href="mailto:teconchen@gmail.com"
+							target="_blank"
+							className="underline text-[var(--zen-base)]"
+						>
+							Escríbenos
 						</a>
 					</div>
 				</div>

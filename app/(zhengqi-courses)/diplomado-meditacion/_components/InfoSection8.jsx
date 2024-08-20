@@ -101,16 +101,20 @@ const InfoSection8 = () => {
 					Tengo otra pregunta
 				</a>
 			</div>
-			<div className="w-full h-full mt-[130px] mb-[30px] relative">
+			<div className="w-full h-full mt-[130px] relative xl:mb-0 mb-[45px]">
 				<InfoModal />
 			</div>
-			<div className="w-full text-center xl:text-[21px] text-[14px] text-[var(--zen-analog2)] font-bold mb-[10px]">
-				Para facilidades de pago.{" "}
-				<a href="mailto:teconchen@gmail.com" target="_blank">
-					Escríbenos.
+			<div className="gSansMedium w-full flex items-center justify-center xl:flex-row flex-col text-center xl:text-[40px] text-[20px] text-[var(--zen-pilaresanim)] font-bold my-[40px]">
+				Para facilidades de pago:{" "}
+				<a
+					href="mailto:teconchen@gmail.com"
+					target="_blank"
+					className="underline text-[var(--zen-analog)] xl:ml-[4px]"
+				>
+					Escríbenos
 				</a>
 			</div>
-			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center xl:text-[40px] text-[24px] text-[var(--zen-analog)]">
+			<h2 className="gSansMedium font-bold w-full mb-[40px] flex items-center justify-center text-center xl:text-[46px] text-[28px] text-[var(--zen-analog)]">
 				¡Otra Vida es Posible!
 			</h2>
 		</div>
