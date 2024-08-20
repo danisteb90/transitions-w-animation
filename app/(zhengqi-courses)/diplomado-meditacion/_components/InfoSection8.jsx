@@ -104,12 +104,18 @@ const InfoSection8 = () => {
 			<div className="w-full h-full mt-[130px] relative xl:mb-0 mb-[45px]">
 				<InfoModal />
 			</div>
-			<div className="gSansMedium w-full flex items-center justify-center xl:flex-row flex-col text-center xl:text-[40px] text-[20px] text-[var(--zen-pilaresanim)] font-bold my-[40px]">
+			<div className="gSansMedium w-full flex items-center justify-center xl:flex-row flex-col text-center px-[10px] xl:text-[40px] text-[25px] text-[var(--zen-pilaresanim)] font-bold mt-[30px] mb-[-2px]">
+				<p>
+					Formación Completa por{" "}
+					<span className="text-[var(--zen-analog)]">490€</span>
+				</p>
+			</div>
+			<div className="gSansMedium w-full flex items-center justify-center text-center xl:text-[30px] text-[16px] text-[var(--zen-pilaresanim)] font-bold mt-[5px] mb-[40px]">
 				Para facilidades de pago:{" "}
 				<a
 					href="mailto:teconchen@gmail.com"
 					target="_blank"
-					className="underline text-[var(--zen-analog)] xl:ml-[4px]"
+					className="underline text-[var(--zen-analog)] xl:ml-[5px] ml-[3px]"
 				>
 					Escríbenos
 				</a>
