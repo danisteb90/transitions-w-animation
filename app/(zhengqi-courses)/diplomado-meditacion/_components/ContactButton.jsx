@@ -1,6 +1,6 @@
 const ContactButton = () => {
 	return (
-		<div className="button-container fixed top-[20px] right-[20px] xl:w-[170px] w-[140px] h-[50px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2]">
+		<div className="button-container fixed top-[20px] right-[20px] xl:w-[170px] w-[140px] h-[50px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[3]">
 			<a
 				href="https://wa.me/34684408835"
 				target="_blank"
