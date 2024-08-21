@@ -149,7 +149,7 @@ const IntroAnimation = () => {
 				</div>
 				<div className="w-full h-full absolute">
 					<video autoPlay muted loop className="w-full h-full object-cover">
-						<source src="/Assets/background3.webm" type="video/mp4" />
+						<source src="/Assets/Background3.webm" type="video/mp4" />
 					</video>
 				</div>
 			</div>
