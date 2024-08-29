@@ -64,6 +64,7 @@ function ModalForm({ onClose }) {
 					/>
 				</div>
 				<div className="form-group">
+					\ //TODO: Agregar libreria de telfs
 					<label htmlFor="phone">Teléfono:</label>
 					<select id="country-code" name="country-code">
 						<option value="+34">España (+34)</option>
