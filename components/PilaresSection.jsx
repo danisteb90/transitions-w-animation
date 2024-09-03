@@ -227,7 +227,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-base)]">
 						<div>
 							<Image
-								src="/Assets/entorno.png"
+								src="/Assets/pilares/entorno.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -241,7 +241,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-lightorange)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/consciencia-corporal.png"
+								src="/Assets/pilares/consciencia-corporal.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -255,7 +255,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-sky)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/alimentacion.png"
+								src="/Assets/pilares/alimentacion.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -269,7 +269,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-analog2)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/psique.png"
+								src="/Assets/pilares/psique.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -283,7 +283,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-analog)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/inconsciente-colectiva.png"
+								src="/Assets/pilares/inconsciente-colectiva.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -297,7 +297,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-lightorange)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/energia-vital.png"
+								src="/Assets/pilares/energia-vital.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -311,7 +311,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-triadic)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/parapsicologia.png"
+								src="/Assets/pilares/parapsicologia.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -325,7 +325,7 @@ const PilaresSection = () => {
 					<div className="bento_box bg-[var(--zen-triadic)]">
 						<div className="bento_box_content">
 							<Image
-								src="/Assets/atencion-plena.png"
+								src="/Assets/pilares/atencion-plena.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -351,7 +351,8 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Entorno, hábitat</h2>
 								<p className="bento_modal_subtitle">
-									Un Retorno a Nuestro Primer Hogar.
+									Un Retorno a <br />
+									Nuestro Primer Hogar
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -368,7 +369,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/entorno-big.avif"
+								src="/Assets/pilares/entorno-big.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -387,7 +388,7 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Consciencia Corporal, Manejo de la Atención</h2>
 								<p className="bento_modal_subtitle">
-									Una Presencia en Libertad.
+									Una Presencia en Libertad
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -404,7 +405,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/entorno-big.avif"
+								src="/Assets/pilares/consciencia-corporal.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -418,7 +419,8 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Alimentación, Nutrición</h2>
 								<p className="bento_modal_subtitle">
-									Una Epigenética Armónica e Integral.
+									Una Epigenética
+									<br /> Armónica e Integral
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -436,7 +438,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/alimentacion.avif"
+								src="/Assets/pilares/alimentacion.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -450,7 +452,7 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Psique, Pensamiento</h2>
 								<p className="bento_modal_subtitle">
-									Un Psicoprograma de Libertad.
+									Un Psicoprograma de Libertad
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -468,7 +470,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/psique.avif"
+								src="/Assets/pilares/psique.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -482,7 +484,8 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Inconsciente Colectivo, Historia Personal</h2>
 								<p className="bento_modal_subtitle">
-									El Encuentro con la Semilla Primordial.
+									El Encuentro con
+									<br /> la Semilla Primordial
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -499,7 +502,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/inconsciente-colectivo.avif"
+								src="/Assets/pilares/inconsciente-colectivo.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -513,7 +516,7 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Esencia Vital, Energía Sexual</h2>
 								<p className="bento_modal_subtitle">
-									Activando el Vehículo de Luz.
+									Activando el Vehículo de Luz
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -530,7 +533,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/esencia-vital.avif"
+								src="/Assets/pilares/esencia-vital.avif"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -543,7 +546,7 @@ const PilaresSection = () => {
 						<div className="bento_modal_container">
 							<div className="bento_modal_content">
 								<h2>Parapsicología, Realidad Extrasensorial</h2>
-								<p className="bento_modal_subtitle">Al Otro Lado del Espejo.</p>
+								<p className="bento_modal_subtitle">Al Otro Lado del Espejo</p>
 								<div className="bento_modal_info">
 									<p>
 										Nuestra realidad humana se desarrolla en diversas
@@ -561,7 +564,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/parapsicologia.avif"
+								src="/Assets/pilares/parapsicologia.png"
 								alt="box-image"
 								width={500}
 								height={500}
@@ -575,7 +578,8 @@ const PilaresSection = () => {
 							<div className="bento_modal_content">
 								<h2>Manejo de la Atención, Atención Plena</h2>
 								<p className="bento_modal_subtitle">
-									La Liberación de Nuestra Presencia.
+									La Liberación de
+									<br /> Nuestra Presencia
 								</p>
 								<div className="bento_modal_info">
 									<p>
@@ -592,7 +596,7 @@ const PilaresSection = () => {
 						</div>
 						<div className="bento_modal_image">
 							<Image
-								src="/Assets/atencion-plena.avif"
+								src="/Assets/pilares/atencion-plena.avif"
 								alt="box-image"
 								width={500}
 								height={500}

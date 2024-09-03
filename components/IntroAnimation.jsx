@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 import Footer from "./Footer";
 import FooterMarquee from "./FooterMarquee";
 import Header from "./Header";
+import CoursesSlider from "./CoursesSlider";
 
 const DynamicBentoBoxes = dynamic(() => import("./PilaresSection.jsx"), {
 	ssr: false,
@@ -131,16 +132,16 @@ const IntroAnimation = () => {
 						En este <span className="gSansMedium">Presente</span>
 					</p>
 				</div>
-				<div className="gSans absolute z-[3] w-full h-full flex items-center justify-center 2xl:p-[120px] xl:p-[50px] p-[20px]">
-					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[30px] xl:gap-[15px] gap-[10px] bg-[#0000009f] backdrop-blur-lg rounded-xl opacity-0">
+				<div className="gSans absolute z-[3] w-full h-full flex items-center justify-center 2xl:p-[160px] xl:px-[120px] xl:py-[80px] p-[20px]">
+					<div className="relative top-0 left-0 third-text w-full h-full flex flex-col md:flex-row items-center justify-center 2xl:gap-[30px] xl:gap-[15px] gap-[10px] bg-[#0000009f] backdrop-blur-md rounded-xl opacity-0 p-[40px]">
 						<Image
 							src="/Assets/Logo-Azul-Texto.webp"
 							alt="logo"
-							width={300}
-							height={400}
+							width={250}
+							height={300}
 							className="logo xl:w-[290px] w-[160px] opacity-0"
 						/>
-						<p className="third-text xl:w-[850px] w-[360px] xl:text-[38px] text-[26px] text-center font-semibold text-[var(--zen-white)] px-[60px] opacity-0">
+						<p className="third-text xl:w-[850px] w-[360px] 2xl:text-[46px] xl:text-[36px] text-[26px] text-center font-semibold text-[var(--zen-white)] px-[50px] opacity-0">
 							La primera Escuela de realización espiritual, basada en los ocho
 							pilares de transformación existencial descritos por las Escuelas
 							Ancestrales del Yin-Yang.
@@ -157,14 +158,14 @@ const IntroAnimation = () => {
 				id="courses-container"
 				className="courses-container w-full xl:h-screen h-auto"
 			>
-				<CourseSection />
+				<CoursesSlider />
 			</div>
 			<div id="pilares-container" className="w-full h-screen">
 				<DynamicBentoBoxes />
 			</div>
 			<div
 				id="footer-container"
-				className="w-full h-[250px] bg-[var(--zen-pilaresanim)]"
+				className="w-full h-[250px] bg-[var(--zen-orange)]"
 			>
 				<FooterMarquee />
 				<Footer marginLeft="ml-[10px]" />

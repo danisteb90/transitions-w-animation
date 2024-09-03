@@ -16,6 +16,7 @@ import Footer from "@/components/Footer";
 const DiplomadoMeditacion = () => {
 	return (
 		<div className="w-full h-screen">
+			<ArrowDown href="/#courses-container" />
 			<LeftMenu />
 			<ContactButton text="Contáctanos" />
 			<div className="w-full xl:h-screen h-[800px]">

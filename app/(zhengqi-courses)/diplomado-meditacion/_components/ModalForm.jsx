@@ -1,8 +1,11 @@
 "use client";
 import { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
-function ModalForm({ onClose }) {
+function ModalForm({ onClose, pdfLink }) {
 	const [buttonText, setButtonText] = useState("Descargar PDF");
+	const [phone, setPhone] = useState("");
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -28,8 +31,7 @@ function ModalForm({ onClose }) {
 					modalMessage.textContent = "Error: Something went wrong.";
 				}
 				setTimeout(onClose, 800);
-				window.location.href =
-					"https://drive.google.com/uc?export=download&id=1ji1W-LN20dRnj7zLU5WDRlSecuVYdxlI";
+				window.location.href = pdfLink;
 			}
 		};
 		xhr.send(new FormData(event.target));
@@ -64,28 +66,17 @@ function ModalForm({ onClose }) {
 					/>
 				</div>
 				<div className="form-group">
-					\ //TODO: Agregar libreria de telfs
 					<label htmlFor="phone">Teléfono:</label>
-					<select id="country-code" name="country-code">
-						<option value="+34">España (+34)</option>
-						<option value="+54">Argentina (+54)</option>
-						<option value="+32">Bélgica (+32)</option>
-						<option value="+56">Chile (+56)</option>
-						<option value="+57">Colombia (+57)</option>
-						<option value="+593">Ecuador (+593)</option>
-						<option value="+33">Francia (+33)</option>
-						<option value="+49">Alemania (+49)</option>
-						<option value="+39">Italia (+39)</option>
-						<option value="+52">México (+52)</option>
-						<option value="+31">Países Bajos (+31)</option>
-						<option value="+51">Perú (+51)</option>
-						<option value="+351">Portugal (+351)</option>
-						<option value="+44">Reino Unido (+44)</option>
-						<option value="+1">EEUU (+1)</option>
-						<option value="+58">Venezuela (+58)</option>
-						<option value="+1">Canadá (+1)</option>
-					</select>
-					<input type="tel" id="phone" name="Telefono" />
+					<PhoneInput
+						country={"es"}
+						value={phone}
+						onChange={setPhone}
+						inputProps={{
+							name: "Telefono",
+							required: true,
+							autoFocus: true,
+						}}
+					/>
 				</div>
 				<label className="consent">
 					<input type="checkbox" id="consent" name="Consent" />

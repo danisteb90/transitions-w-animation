@@ -150,7 +150,12 @@ const InfoSection4 = () => {
 			</div>
 			{isOpenModal && (
 				<div className="fixed inset-0 z-[3] flex items-center justify-center bg-black bg-opacity-80">
-					<ModalForm onClose={closeModal} />
+					<ModalForm
+						onClose={closeModal}
+						pdfLink={
+							"https://drive.google.com/uc?export=download&id=1ji1W-LN20dRnj7zLU5WDRlSecuVYdxlI"
+						}
+					/>
 				</div>
 			)}
 		</div>
