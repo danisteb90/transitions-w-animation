@@ -35,9 +35,9 @@ const DHeroSection = () => {
 				/>
 			</div>
 			<div className="absolute top-[50%] translate-y-[-50%] md:right-[4%] right-[50%] md:translate-x-0 translate-x-[50%] bg-[#000000ab] xl:w-6/12 w-5/6 h-auto rounded-2xl backdrop-blur-lg z-0 md:p-8 p-4">
-				<h2 className="gSansMedium 2xl:text-[36px] md:text-[30px] text-[20px] text-[var(--zen-white)] font-bold">
+				<h1 className="gSansMedium 2xl:text-[36px] md:text-[30px] text-[20px] text-[var(--zen-white)] font-bold">
 					DIPLOMADO EN MEDITACIÓN
-				</h2>
+				</h1>
 				<h3 className="gSans 2xl:text-[28px] xl:text-[20px] text-[16px] text-[var(--zen-white)] font-bold 2xl:mb-6 mb-4">
 					Formación en línea para Instructores en Meditación
 				</h3>

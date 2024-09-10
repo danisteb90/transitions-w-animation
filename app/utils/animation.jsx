@@ -12,7 +12,7 @@ export const animatePageIn = () => {
 		const tl = gsap.timeline();
 
 		tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
-			yPercent: 0,
+			yPercent: 110,
 		}).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
 			yPercent: 110,
 			stagger: 0.2,

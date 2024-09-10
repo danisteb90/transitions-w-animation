@@ -76,7 +76,7 @@ const InfoSection8 = () => {
 
 	return (
 		<div className="w-full h-full xl:pl-[120px] pl-0 flex flex-col justify-center items-center mt-[50px]">
-			<div className="w-full h-full flex flex-col items-center justify-center flex-1 mb-[20px]">
+			<div className="w-full h-full flex flex-col items-center justify-center flex-1">
 				<h3 className="w-full text-center gSansMedium xl:text-[40px] text-[24px] font-bold mb-[30px] text-[var(--zen-analog)]">
 					Preguntas Frecuentes
 				</h3>
@@ -92,7 +92,7 @@ const InfoSection8 = () => {
 					);
 				})}
 			</div>
-			<div className="xl:w-[250px] w-[180px] h-[60px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2] mb-[50px]">
+			<div className="xl:w-[250px] w-[180px] h-[60px] bg-[var(--zen-base)] rounded-xl flex items-center justify-center cursor-pointer hover:bg-[var(--zen-lightorange)] transition-all duration-600 z-[2] mb-[80px] mt-[-10px]">
 				<a
 					href="https://wa.me/34684408835"
 					target="_blank"
