@@ -41,6 +41,10 @@ export default function RootLayout({ children }) {
 				`}
 				</Script>
 				<meta
+					name="google-site-verification"
+					content="vLuAI1SlzBQusDzbsfyyAlCnAU9sJdLJvOAqXjoCntw"
+				/>
+				<meta
 					name="facebook-domain-verification"
 					content="4gm9qvxa94mfdk7woi33pgd1fkhqzg"
 				/>
