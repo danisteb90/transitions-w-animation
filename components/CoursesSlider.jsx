@@ -171,11 +171,14 @@ const CoursesSlider = () => {
 								</div>
 							)}
 							<div className="buttons">
-								<TransitionLink
+								{/* <TransitionLink
 									href="/diplomado-meditacion"
 									label="Leer Más"
 									background="bg-[#00000099]"
-								/>
+								/> */}
+								<div className="flex items-center justify-center bg-[#00000099] rounded-[10px] p-[10px] cursor-pointer transition-all duration-600 z-[2] text-[var(--zen-white)] hover:bg-[var(--zen-white)] hover:text-black">
+									<Link href="/diplomado-meditacion">Leer Más</Link>
+								</div>
 								<div className="flex items-center justify-center bg-[#00000099] rounded-[10px] p-[10px] cursor-pointer transition-all duration-600 z-[2] text-[var(--zen-white)] hover:bg-[var(--zen-white)] hover:text-black">
 									<p
 										onClick={openModal}
