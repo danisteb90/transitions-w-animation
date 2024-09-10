@@ -7,7 +7,7 @@ export default function Home() {
 	const router = useRouter();
 
 	useEffect(() => {
-		router.push("/meditacion");
+		router.push("/diplomado-meditacion");
 	}, [router]);
 
 	return (

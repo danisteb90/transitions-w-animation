@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import TransitionLink from "./TransitionLink";
 import Link from "next/link";
-import ModalForm from "@/app/(zhengqi-courses)/meditacion/_components/ModalForm";
+import ModalForm from "@/app/(zhengqi-courses)/diplomado-meditacion/_components/ModalForm";
 
 const CoursesSlider = () => {
 	const [isMobile, setIsMobile] = useState(false);
@@ -177,7 +177,7 @@ const CoursesSlider = () => {
 									background="bg-[#00000099]"
 								/> */}
 								<div className="flex items-center justify-center bg-[#00000099] rounded-[10px] p-[10px] cursor-pointer transition-all duration-600 z-[2] text-[var(--zen-white)] hover:bg-[var(--zen-white)] hover:text-black">
-									<Link href="/meditacion">Leer Más</Link>
+									<Link href="/diplomado-meditacion">Leer Más</Link>
 								</div>
 								<div className="flex items-center justify-center bg-[#00000099] rounded-[10px] p-[10px] cursor-pointer transition-all duration-600 z-[2] text-[var(--zen-white)] hover:bg-[var(--zen-white)] hover:text-black">
 									<p
